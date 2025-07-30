@@ -10,9 +10,13 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="not all" onload="this.media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
     <!-- Google Fonts -->
     <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- CSS Beranda-->
     <link href="assets/css/styleberanda.css" rel="stylesheet">
 </head>
@@ -56,9 +60,23 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto ">
                     <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
                     <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
                     <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
@@ -78,8 +96,8 @@
                     <p class="hero-subtitle">Care For Life, Care With Love</p>
                     <div class="doctor-search d-flex align-items-center mx-auto mx-lg-0" style="max-width: 400px;">
                         <i class="fas fa-user-md me-2 me-md-3 text-muted"></i>
-                        <input type="text" class="form-control border-0 flex-grow-1" placeholder="Cari Dokter"
-                            aria-label="Cari Dokter">
+                        <input id="form-cari-dokter" type="text" class="form-control border-0 flex-grow-1"
+                            placeholder="Cari Dokter" aria-label="Cari Dokter">
                         <button class="btn btn-link text-muted ms-2" type="button" aria-label="Search">
                             <i class="fas fa-search"></i>
                         </button>
@@ -96,35 +114,36 @@
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
                     <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
                         tabindex="0" role="button">
-                        <i class="fas fa-search service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3"></i>
+                        <i class="fas fa-search service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
                         <span class="fw-medium text-responsive">Cari Dokter</span>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
                     <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
                         tabindex="0" role="button">
-                        <i class="fas fa-clipboard-list service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3"></i>
+                        <i class="fas fa-clipboard-list service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
                         <span class="fw-medium text-responsive">Pendaftaran</span>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
                     <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
                         tabindex="0" role="button">
-                        <i class="fas fa-bullhorn service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3"></i>
+                        <i class="fas fa-bullhorn service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
                         <span class="fw-medium text-responsive">Pengaduan</span>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
                     <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
                         tabindex="0" role="button">
-                        <i class="fas fa-chart-bar service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3"></i>
+                        <i class="fas fa-chart-bar service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
                         <span class="fw-medium text-responsive">Kepuasan</span>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row justify-content-lg-between align-items-center text-center text-lg-start"
-                        tabindex="0" role="button">
-                        <div class="tarif-badge mb-2 mb-lg-0">Rp</div>
+                    <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
+                    tabindex="0" role="button">
+                        <i class="fas fa-rupiah-sign service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
+                        <!-- <div class="tarif-badge mb-2 mb-lg-0">Rp</div> -->
                         <span class="fw-medium text-responsive">Info Tarif</span>
                     </div>
                 </div>
@@ -133,18 +152,20 @@
     </section>
 
     <!-- Services Section -->
-    <section id="layanan" class="py-4 py-md-5 loading">
+    <section id="layanan" class="py-4 py-md-5">
         <div class="container">
-            <h2 class="section-title">LAYANAN KAMI</h2>
-            <div class="services-slider">
-                <div class="slider-content">
-                    <div class="row align-items-start g-4">
-                        <div class="col-12 col-md-6 text-center slider-image-container">
-                            <img src="assets/images/img_image.png" alt="Layanan Jantung Terpadu"
-                                class="slider-image-semantic">
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="slider-text">
+            <h2 class="section-title">LAYANAN UNGGULAN</h2>
+
+            <!-- Swiper Container -->
+            <div class="swiper layananSwiper services-slider">
+                <div class="swiper-wrapper slider-content">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="row align-items-start g-4">
+                            <div class="col-12 col-md-6 text-center slider-image-container">
+                                <img src="assets/images/radiologi.jpg" alt="Layanan Jantung Terpadu" class="slider-image-semantic">
+                            </div>
+                            <div class="col-12 col-md-6 slider-text">
                                 <h3>JANTUNG TERPADU</h3>
                                 <p>Layanan Jantung Terpadu adalah pendekatan holistik dalam pelayanan kesehatan yang
                                     ditujukan khusus untuk masalah dan gangguan pada jantung dengan teknologi medis
@@ -152,24 +173,97 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-buttons-overlay">
-                        <button class="slider-btn slider-btn-prev" type="button" aria-label="Previous slide">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="slider-btn slider-btn-next" type="button" aria-label="Next slide">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="row align-items-start g-4">
+                            <div class="col-12 col-md-6 text-center slider-image-container">
+                                <img src="assets/images/paru.jpg" alt="Layanan Paru Unggulan" class="slider-image-semantic">
+                            </div>
+                            <div class="col-12 col-md-6 slider-text">
+                                <h3>LAYANAN PARU</h3>
+                                <p>Menangani berbagai penyakit paru-paru dengan fasilitas dan tenaga medis spesialis
+                                    yang andal dan bersertifikasi.</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Tambah slide lainnya sesuai kebutuhan -->
+
                 </div>
+
+                <!-- Navigasi tombol -->
+                <div class="swiper-button-prev slider-btn"></div>
+                <div class="swiper-button-next slider-btn"></div>
             </div>
         </div>
     </section>
-
     <!-- Articles Section -->
     <section id="artikel" class="py-4 py-md-5 loading">
         <div class="container">
             <h2 class="section-title">ARTIKEL</h2>
             <div class="row g-3 g-md-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_276x422.png" width="400" height="200"
+                                alt="Virus dan Pandemi">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title">Mewabah di China, Akankah Virus HMPV Picu Pandemi seperti
+                                Covid-19? Ini Kata Pakar</h3>
+                            <p class="article-excerpt">Kasus penyakit yang disebabkan Human Metapneumovirus (HMPV)
+                                meningkat di <u>China</u>, tepat lima tahun setelah munculnya pandemi <u>Covid</u>-19.
+                            </p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_1.png" width="400" height="200" alt="Virus dan Pandemi"
+                                alt="Kesehatan Ibu dan Anak">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title">Tips Menjaga Kesehatan Ibu Hamil dan Janin Selama Masa Kehamilan
+                            </h3>
+                            <p class="article-excerpt">Panduan lengkap untuk ibu hamil dalam menjaga kesehatan selama
+                                masa kehamilan dengan nutrisi yang tepat dan pemeriksaan rutin.</p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_5.png" width="400" height="200" alt="Virus dan Pandemi"
+                                alt="Kesehatan Ibu dan Anak">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title">Manfaat Olahraga Teratur untuk Kesehatan Jantung dan Pembuluh
+                                Darah</h3>
+                            <p class="article-excerpt">Pelajari bagaimana olahraga rutin dapat meningkatkan kesehatan
+                                kardiovaskular dan mencegah penyakit jantung.</p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <article class="article-card h-100" tabindex="0">
                         <div class="article-image">
@@ -287,10 +381,27 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+
     <!-- Bootstrap JS -->
     <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Beranda JS-->
     <script src="assets/javascript/beranda.js"></script>
+    <script>
+        const layananSwiper = new Swiper(".layananSwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 
 </html>

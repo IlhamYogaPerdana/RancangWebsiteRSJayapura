@@ -50,53 +50,53 @@
             });
 
             // // Enhanced slider functionality
-            let currentSlide = 0;
-            const slides = [
-                {
-                    title: 'JANTUNG TERPADU',
-                    description: 'Layanan Jantung Terpadu adalah pendekatan holistik dalam pelayanan kesehatan yang ditujukan khusus untuk masalah dan gangguan pada jantung dengan teknologi medis terkini.',
-                    image: 'assets/images/img_image.png'
-                },
-                {
-                    title: 'PARU-PARU TERPADU',
-                    description: 'Pelayanan komprehensif untuk kesehatan paru-paru dengan fasilitas diagnostik canggih dan tim dokter spesialis yang berpengalaman.',
-                    image: 'assets/images/paru-paru.jpeg'
-                },
-                {
-                    title: 'GINJAL TERPADU',
-                    description: 'Layanan kesehatan ginjal lengkap termasuk hemodialisis, transplantasi, dan pencegahan penyakit ginjal kronik.',
-                    image: 'assets/images/ginjal.jpg'
-                }
-            ];
+            // let currentSlide = 0;
+            // const slides = [
+            //     {
+            //         title: 'JANTUNG TERPADU',
+            //         description: 'Layanan Jantung Terpadu adalah pendekatan holistik dalam pelayanan kesehatan yang ditujukan khusus untuk masalah dan gangguan pada jantung dengan teknologi medis terkini.',
+            //         image: 'assets/images/radiologi.jpg'
+            //     },
+            //     {
+            //         title: 'PARU-PARU TERPADU',
+            //         description: 'Pelayanan komprehensif untuk kesehatan paru-paru dengan fasilitas diagnostik canggih dan tim dokter spesialis yang berpengalaman.',
+            //         image: 'assets/images/paru-paru.jpeg'
+            //     },
+            //     {
+            //         title: 'GINJAL TERPADU',
+            //         description: 'Layanan kesehatan ginjal lengkap termasuk hemodialisis, transplantasi, dan pencegahan penyakit ginjal kronik.',
+            //         image: 'assets/images/ginjal.jpg'
+            //     }
+            // ];
 
-            function updateSlider(index) {
-                const sliderText = document.querySelector('.slider-text');
-                const sliderImage = document.querySelector('.slider-image-semantic');
+            // function updateSlider(index) {
+            //     const sliderText = document.querySelector('.slider-text');
+            //     const sliderImage = document.querySelector('.slider-image-semantic');
 
-                if (sliderText && sliderImage) {
-                    sliderText.querySelector('h3').textContent = slides[index].title;
-                    sliderText.querySelector('p').textContent = slides[index].description;
-                    sliderImage.src = slides[index].image;
-                    sliderImage.alt = slides[index].title;
-                }
-            }
+            //     if (sliderText && sliderImage) {
+            //         sliderText.querySelector('h3').textContent = slides[index].title;
+            //         sliderText.querySelector('p').textContent = slides[index].description;
+            //         sliderImage.src = slides[index].image;
+            //         sliderImage.alt = slides[index].title;
+            //     }
+            // }
 
-            document.querySelectorAll('.slider-btn').forEach((btn, index) => {
-                btn.addEventListener('click', function () {
-                    if (index === 0) {
-                        currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
-                    } else {
-                        currentSlide = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
-                    }
-                    updateSlider(currentSlide);
-                });
-            });
+            // document.querySelectorAll('.slider-btn').forEach((btn, index) => {
+            //     btn.addEventListener('click', function () {
+            //         if (index === 0) {
+            //             currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
+            //         } else {
+            //             currentSlide = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
+            //         }
+            //         updateSlider(currentSlide);
+            //     });
+            // });
 
-            // Auto-slide functionality
-            setInterval(() => {
-                currentSlide = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
-                updateSlider(currentSlide);
-            }, 8000);
+            // // Auto-slide functionality
+            // setInterval(() => {
+            //     currentSlide = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
+            //     updateSlider(currentSlide);
+            // }, 8000);
 
             // Enhanced article interactions
             document.querySelectorAll('.article-link').forEach(link => {
