@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styledokterkami.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-globe"></i>
+                        <span>ID</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#karir">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="dokter-kami" class="hero-section loading">
+        <div class="container">
+            <div class="row justify-content-center justify-content-lg-start">
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+                    <h1 class="hero-title">Dokter Kami</h1>
+                    <p class="hero-subtitle">Dokter yang handal siap melanyani anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="" class="py-4 py-md-5 loading">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Masukan nama dokter">
+                        </div>
+                        <!-- Divider dengan text "atau" -->
+                        <div class="divider-container">
+                            <div class="divider-line"></div>
+                            <span class="divider-text">atau</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label fw-semibold">Pilih Spesialis</label>
+                            <div class="btn-group-custom" id="spesialis">
+                                <button type="button" class="btn" data-specialty="penyakit-dalam">Penyakit
+                                    Dalam</button>
+                                <button type="button" class="btn" data-specialty="anak">Anak</button>
+                                <button type="button" class="btn" data-specialty="jantung">Jantung</button>
+                                <button type="button" class="btn" data-specialty="mata">Mata</button>
+                                <button type="button" class="btn" data-specialty="kulit">Kulit</button>
+                                <button type="button" class="btn" data-specialty="bedah">Bedah</button>
+                                <button type="button" class="btn" data-specialty="obgyn">Obgyn</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label fw-semibold">Pilih Hari</label>
+                            <div class="btn-group-custom" id="hari">
+                                <button type="button" class="btn" data-specialty="senin">Senin</button>
+                                <button type="button" class="btn" data-specialty="selasa">Selasa</button>
+                                <button type="button" class="btn" data-specialty="rabu">Rabu</button>
+                                <button type="button" class="btn" data-specialty="kamis">Kamis</button>
+                                <button type="button" class="btn" data-specialty="jumat">Jumat</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="waktu">Waktu</label>
+                            <select type="text" id="waktu" name="waktu" class="form-control rounded-pill select-custom">
+                                <option>---Pilih Waktu---</option>
+                            </select>
+                        </div>
+                        <div class="text-end">
+                            <button class="btn newsletter-btn my-3 w-100 w-sm-auto">Cari</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card shadow-sm border-0 mb-2">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start">
+                                        <!-- Doctor Image -->
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="bg-success rounded"
+                                                style="width: 75px; height: 100px; overflow: hidden;">
+                                                <img src="assets/images/amos.png" alt="Dr. Amos Pongbulaan"
+                                                    class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+
+                                        <!-- Doctor Info -->
+                                        <div class="flex-grow-1">
+                                            <h6 class="card-title mb-1 fw-bold text-dark">Dr. Amos Pongbulaan</h6>
+                                            <p class="text-muted small mb-1">Spesialis Penyakit Dalam</p>
+                                            <p class="text-muted small mb-2">Penyakit Dalam</p>
+
+                                            <!-- Schedule -->
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">
+                                                    <i class="far fa-calendar-alt me-1"></i>
+                                                    Rabu dan Jumat
+                                                </small>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-1">
+                                                <small class="text-muted">
+                                                    <i class="far fa-clock me-1"></i>
+                                                    08:00 - 16:00 WIT
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card shadow-sm border-0 mb-2">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start">
+                                        <!-- Doctor Image -->
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="bg-success rounded"
+                                                style="width: 75px; height: 100px; overflow: hidden;">
+                                                <img src="assets/images/amos.png" alt="Dr. Amos Pongbulaan"
+                                                    class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+
+                                        <!-- Doctor Info -->
+                                        <div class="flex-grow-1">
+                                            <h6 class="card-title mb-1 fw-bold text-dark">Dr. Amos Pongbulaan</h6>
+                                            <p class="text-muted small mb-1">Spesialis Penyakit Dalam</p>
+                                            <p class="text-muted small mb-2">Penyakit Dalam</p>
+
+                                            <!-- Schedule -->
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">
+                                                    <i class="far fa-calendar-alt me-1"></i>
+                                                    Rabu dan Jumat
+                                                </small>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-1">
+                                                <small class="text-muted">
+                                                    <i class="far fa-clock me-1"></i>
+                                                    08:00 - 16:00 WIT
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card shadow-sm border-0 mb-2">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start">
+                                        <!-- Doctor Image -->
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="bg-success rounded"
+                                                style="width: 75px; height: 100px; overflow: hidden;">
+                                                <img src="assets/images/amos.png" alt="Dr. Amos Pongbulaan"
+                                                    class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+
+                                        <!-- Doctor Info -->
+                                        <div class="flex-grow-1">
+                                            <h6 class="card-title mb-1 fw-bold text-dark">Dr. Amos Pongbulaan</h6>
+                                            <p class="text-muted small mb-1">Spesialis Penyakit Dalam</p>
+                                            <p class="text-muted small mb-2">Penyakit Dalam</p>
+
+                                            <!-- Schedule -->
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">
+                                                    <i class="far fa-calendar-alt me-1"></i>
+                                                    Rabu dan Jumat
+                                                </small>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-1">
+                                                <small class="text-muted">
+                                                    <i class="far fa-clock me-1"></i>
+                                                    08:00 - 16:00 WIT
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col py-5">
+                            <!-- Pagination -->
+                            <nav aria-label="Doctor pagination">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link paging-btn" href="#" tabindex="-1"
+                                            aria-disabled="true">Sebelumnya</a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link paging-btn paging-btn-active" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link paging-btn" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link paging-btn" href="#">Selanjutnya</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Button group in btn-group-custom
+            const btnGroupButtonsSpesialis = document.querySelectorAll('#spesialis .btn');
+            btnGroupButtonsSpesialis.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsSpesialis.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            const btnGroupButtonsHari = document.querySelectorAll('#hari .btn');
+            btnGroupButtonsHari.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsHari.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        })
+    </script>
+</body>
+
+</html>

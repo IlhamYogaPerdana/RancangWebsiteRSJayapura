@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #14b8ad;
+    --secondary-color: #007c85;
+    --accent-color: #ccdb39;
+    --text-dark: #005157;
+    --bg-light: #f6f5f7;
+    --article-bg: #ece6d8;
+    --footer-bg: #494949;
+    --footer-bottom: #f6e4da;
+}
+
+/* Hero Section - Fully Responsive */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+        url('../../assets/images/dokter-kami.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: clamp(300px, 70vh, 400px);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Disable fixed background on mobile for better performance */
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll;
+        min-height: 500px;
+    }
+}
+
+.hero-title {
+    font-size: clamp(1.75rem, 6vw, 3.5rem);
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.divider-container {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider-line {
+    border-top: 1px solid #dee2e6;
+    position: relative;
+}
+
+.divider-text {
+    background-color: var(--bg-light);
+    color: #6c757d;
+    padding: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style 2 - Button Group */
+.btn-group-custom .btn {
+    border-radius: 25px !important;
+    margin: 0 4px 8px 0;
+    border: 2px solid #e9ecef;
+    background: white;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.btn-group-custom .btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.btn-group-custom .btn.active {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    /* border-color: var(--text-dark); */
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.select-custom:focus {
+    border-color: var(--primary-color); /* hijau bootstrap */
+box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+    background-color: #eaf4ff; /* Opsional: background aktif */
+}
+
+/* Paniation  */
+.paging-btn {
+    /* background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); */
+    color: var(--accent-color);
+    border: none;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    transition: all 0.3s ease;
+}
+
+.paging-btn-active {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.paging-btn:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: aliceblue;
+    /* transform: scale(1.05); */
+}
