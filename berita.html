@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- CSS Beranda-->
-    <link href="assets/css/styleberanda.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styleberita.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,7 +62,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
 
                     <!-- Dropdown untuk Layanan -->
                     <li class="nav-item dropdown">
@@ -78,7 +79,7 @@
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
-                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beranda.html">Berita</a></li>
                     <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
                     <li class="nav-item"><a class="nav-link" href="#karir">Karir</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
@@ -88,129 +89,22 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="hero-section loading">
+    <section id="dokter-kami" class="hero-section loading">
         <div class="container">
             <div class="row justify-content-center justify-content-lg-start">
                 <div class="col-12 col-lg-8 text-center text-lg-start">
-                    <h1 class="hero-title">RUMAH SAKIT UMUM<br>PUSAT JAYAPURA</h1>
-                    <p class="hero-subtitle">Care For Life, Care With Love</p>
-                    <div class="doctor-search d-flex align-items-center mx-auto mx-lg-0" style="max-width: 400px;">
-                        <i class="fas fa-user-md me-2 me-md-3 text-muted"></i>
-                        <input id="form-cari-dokter" type="text" class="form-control border-0 flex-grow-1"
-                            placeholder="Cari Dokter" aria-label="Cari Dokter">
-                        <button class="btn btn-link text-muted ms-2" type="button" aria-label="Search">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
+                    <h1 class="hero-title">Berita</h1>
+                    <p class="hero-subtitle">Sumber informasi terpercaya tentang pelayanan, edukasi, dan kegiatan RSUP
+                        Jayapura
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Service Cards -->
-    <section class="service-section loading">
+
+    <section id="" class="py-4 py-md-5 loading">
         <div class="container">
-            <div class="row g-3 g-md-4 justify-content-center">
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <a href="dokter-kami.html" class="text-decoration-none text-reset">
-                        <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                            tabindex="0" role="button">
-                            <i
-                                class="fas fa-search service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                            <span class="fw-medium text-responsive">Cari Dokter</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                        tabindex="0" role="button">
-                        <i
-                            class="fas fa-clipboard-list service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                        <span class="fw-medium text-responsive">Pendaftaran</span>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                        tabindex="0" role="button">
-                        <i
-                            class="fas fa-bullhorn service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                        <span class="fw-medium text-responsive">Pengaduan</span>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                        tabindex="0" role="button">
-                        <i
-                            class="fas fa-chart-bar service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                        <span class="fw-medium text-responsive">Kepuasan</span>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                        tabindex="0" role="button">
-                        <i
-                            class="fas fa-rupiah-sign service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                        <!-- <div class="tarif-badge mb-2 mb-lg-0">Rp</div> -->
-                        <span class="fw-medium text-responsive">Info Tarif</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="layanan" class="py-4 py-md-5">
-        <div class="container">
-            <h2 class="section-title">LAYANAN UNGGULAN</h2>
-
-            <!-- Swiper Container -->
-            <div class="swiper layananSwiper services-slider">
-                <div class="swiper-wrapper slider-content">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="row align-items-start g-4">
-                            <div class="col-12 col-md-6 text-center slider-image-container">
-                                <img src="assets/images/radiologi.jpg" alt="Layanan Jantung Terpadu"
-                                    class="slider-image-semantic">
-                            </div>
-                            <div class="col-12 col-md-6 slider-text">
-                                <h3>JANTUNG TERPADU</h3>
-                                <p>Layanan Jantung Terpadu adalah pendekatan holistik dalam pelayanan kesehatan yang
-                                    ditujukan khusus untuk masalah dan gangguan pada jantung dengan teknologi medis
-                                    terkini.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="row align-items-start g-4">
-                            <div class="col-12 col-md-6 text-center slider-image-container">
-                                <img src="assets/images/paru.jpg" alt="Layanan Paru Unggulan"
-                                    class="slider-image-semantic">
-                            </div>
-                            <div class="col-12 col-md-6 slider-text">
-                                <h3>LAYANAN PARU</h3>
-                                <p>Menangani berbagai penyakit paru-paru dengan fasilitas dan tenaga medis spesialis
-                                    yang andal dan bersertifikasi.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tambah slide lainnya sesuai kebutuhan -->
-
-                </div>
-
-                <!-- Navigasi tombol -->
-                <div class="swiper-button-prev slider-btn"></div>
-                <div class="swiper-button-next slider-btn"></div>
-            </div>
-        </div>
-    </section>
-    <!-- Articles Section -->
-    <section id="artikel" class="py-4 py-md-5 loading">
-        <div class="container">
-            <h2 class="section-title">ARTIKEL</h2>
             <div class="row g-3 g-md-4">
                 <div class="col-12 col-md-6 col-lg-4">
                     <article class="article-card h-100" tabindex="0">
@@ -225,7 +119,7 @@
                                 meningkat di <u>China</u>, tepat lima tahun setelah munculnya pandemi <u>Covid</u>-19.
                             </p>
                             <div class="d-flex justify-content-end mt-3">
-                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
                                     <i class="fas fa-arrow-right me-2"></i>
                                     <span class="d-none d-md-inline">Baca Selengkapnya</span>
                                 </a>
@@ -245,7 +139,7 @@
                             <p class="article-excerpt">Panduan lengkap untuk ibu hamil dalam menjaga kesehatan selama
                                 masa kehamilan dengan nutrisi yang tepat dan pemeriksaan rutin.</p>
                             <div class="d-flex justify-content-end mt-3">
-                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
                                     <i class="fas fa-arrow-right me-2"></i>
                                     <span class="d-none d-md-inline">Baca Selengkapnya</span>
                                 </a>
@@ -265,7 +159,7 @@
                             <p class="article-excerpt">Pelajari bagaimana olahraga rutin dapat meningkatkan kesehatan
                                 kardiovaskular dan mencegah penyakit jantung.</p>
                             <div class="d-flex justify-content-end mt-3">
-                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
                                     <i class="fas fa-arrow-right me-2"></i>
                                     <span class="d-none d-md-inline">Baca Selengkapnya</span>
                                 </a>
@@ -286,7 +180,7 @@
                                 meningkat di <u>China</u>, tepat lima tahun setelah munculnya pandemi <u>Covid</u>-19.
                             </p>
                             <div class="d-flex justify-content-end mt-3">
-                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
                                     <i class="fas fa-arrow-right me-2"></i>
                                     <span class="d-none d-md-inline">Baca Selengkapnya</span>
                                 </a>
@@ -306,7 +200,7 @@
                             <p class="article-excerpt">Panduan lengkap untuk ibu hamil dalam menjaga kesehatan selama
                                 masa kehamilan dengan nutrisi yang tepat dan pemeriksaan rutin.</p>
                             <div class="d-flex justify-content-end mt-3">
-                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
                                     <i class="fas fa-arrow-right me-2"></i>
                                     <span class="d-none d-md-inline">Baca Selengkapnya</span>
                                 </a>
@@ -326,7 +220,7 @@
                             <p class="article-excerpt">Pelajari bagaimana olahraga rutin dapat meningkatkan kesehatan
                                 kardiovaskular dan mencegah penyakit jantung.</p>
                             <div class="d-flex justify-content-end mt-3">
-                                <a href="#" class="article-link" aria-label="Baca selengkapnya">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
                                     <i class="fas fa-arrow-right me-2"></i>
                                     <span class="d-none d-md-inline">Baca Selengkapnya</span>
                                 </a>
@@ -335,8 +229,31 @@
                     </article>
                 </div>
             </div>
+            <div class="row">
+                <div class="col py-5">
+                    <!-- Pagination -->
+                    <nav aria-label="Doctor pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link paging-btn" href="#" tabindex="-1"
+                                    aria-disabled="true">Sebelumnya</a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link paging-btn paging-btn-active" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link paging-btn" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link paging-btn" href="#">Selanjutnya</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer id="kontak" class="footer pt-4 pt-md-5 loading">
@@ -385,7 +302,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
         style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -397,19 +314,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Beranda JS-->
-    <script src="assets/javascript/beranda.js"></script>
+    <!-- <script src="assets/javascript/beranda.js"></script> -->
     <script>
-        const layananSwiper = new Swiper(".layananSwiper", {
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-        });
+        document.addEventListener('DOMContentLoaded', function () {
+            // Button group in btn-group-custom
+            const btnGroupButtonsSpesialis = document.querySelectorAll('#spesialis .btn');
+            btnGroupButtonsSpesialis.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsSpesialis.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            const btnGroupButtonsHari = document.querySelectorAll('#hari .btn');
+            btnGroupButtonsHari.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsHari.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        })
     </script>
 </body>
 
