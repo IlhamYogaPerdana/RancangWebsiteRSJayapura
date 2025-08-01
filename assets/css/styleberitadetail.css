@@ -9,11 +9,15 @@
     --footer-bottom: #f6e4da;
 }
 
-.hero-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 16px;
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #28a745);
+    z-index: 1000;
+    transition: width 0.1s ease;
 }
 
 .article-meta {
@@ -123,13 +127,15 @@
     margin: 2px;
 }
 
-.reading-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
+#reading-progress {
+    position: fixed!important;
+    /* top: 100px!important; */
+    bottom: 0;
+    left: 0!important;
+    right: 0!important;
     width: 0%;
-    height: 4px;
+    height: 4px!important;
     background: linear-gradient(90deg, #007bff, #28a745);
-    z-index: 1000;
+    /* z-index: 1000000; */
     transition: width 0.1s ease;
 }

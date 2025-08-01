@@ -81,11 +81,13 @@
                     <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
                     <li class="nav-item"><a class="nav-link" href="beranda.html">Berita</a></li>
                     <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#karir">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
                 </ul>
             </div>
         </div>
+        <!-- Reading Progress Bar -->
+        <div class="reading-progress" id="reading-progress"></div>
     </nav>
 
 
@@ -437,6 +439,29 @@
                     btnGroupButtonsHari.forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
                 });
+            });
+
+            // Reading Progress Bar
+            window.addEventListener('scroll', function () {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = (scrollTop / scrollHeight) * 100;
+                document.getElementById('reading-progress').style.width = progress + '%';
+            });
+
+            // Share functionality (basic)
+            document.querySelectorAll('.share-buttons .btn').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    // Add your share logic here
+                    console.log('Sharing via:', this.textContent.trim());
+                });
+            });
+
+            // Newsletter form
+            document.querySelector('form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Terima kasih! Anda telah berlangganan newsletter kami.');
             });
         })
     </script>

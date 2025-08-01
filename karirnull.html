@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/stylekarirnull.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-globe"></i>
+                        <span>ID</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beranda.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="career-hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Bergabunglah dengan Tim Kami</h1>
+                <p class="hero-subtitle">Meskipun saat ini tidak ada lowongan terbuka, kami selalu mencari talenta
+                    terbaik untuk masa depan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- No Current Openings Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="no-openings" data-aos="fade-up">
+                <div class="no-openings-content">
+                    <div class="no-openings-icon floating">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h2 class="no-openings-title">Saat Ini Tidak Ada Lowongan Terbuka</h2>
+                    <p class="no-openings-text">
+                        Terima kasih atas minat Anda untuk bergabung dengan tim kami. Meskipun saat ini tidak ada posisi
+                        yang tersedia,
+                        kami terus berkembang dan selalu mencari profesional terbaik di bidang kesehatan.
+                    </p>
+                    <p class="no-openings-text">
+                        <strong>Jangan khawatir!</strong> Daftarkan diri Anda untuk mendapatkan notifikasi ketika ada
+                        lowongan baru yang sesuai dengan keahlian Anda.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Notification Form -->
+            <div class="notification-form" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="notification-form-title">
+                    <i class="fas fa-bell me-2"></i>Dapatkan Notifikasi Lowongan Terbaru
+                </h3>
+                <p class="notification-form-text">
+                    Isi form di bawah ini dan kami akan menghubungi Anda ketika ada posisi yang sesuai
+                </p>
+
+                <form id="notificationForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label">Nama Lengkap *</label>
+                            <input type="text" class="form-control" name="fullName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email *</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label">No. Telepon *</label>
+                            <input type="tel" class="form-control" name="phone" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Bidang Keahlian *</label>
+                            <select class="form-select" name="field" required>
+                                <option value="">Pilih Bidang Keahlian</option>
+                                <option value="medis">Tenaga Medis</option>
+                                <option value="keperawatan">Keperawatan</option>
+                                <option value="farmasi">Farmasi</option>
+                                <option value="laboratorium">Laboratorium</option>
+                                <option value="radiologi">Radiologi</option>
+                                <option value="administrasi">Administrasi</option>
+                                <option value="keuangan">Keuangan</option>
+                                <option value="hr">Human Resources</option>
+                                <option value="it">IT/Teknologi</option>
+                                <option value="maintenance">Maintenance</option>
+                                <option value="security">Security</option>
+                                <option value="cleaning">Cleaning Service</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Level Posisi yang Diminati</label>
+                        <select class="form-select" name="level">
+                            <option value="">Pilih Level Posisi</option>
+                            <option value="entry">Entry Level / Fresh Graduate</option>
+                            <option value="junior">Junior (1-3 tahun)</option>
+                            <option value="senior">Senior (3-7 tahun)</option>
+                            <option value="supervisor">Supervisor/Team Lead</option>
+                            <option value="manager">Manager</option>
+                            <option value="director">Director/Head</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Ringkasan Pengalaman (Opsional)</label>
+                        <textarea class="form-control" name="experience" rows="3"
+                            placeholder="Ceritakan singkat tentang pengalaman dan keahlian Anda..."></textarea>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="agreement" required>
+                        <label class="form-check-label">
+                            Saya setuju untuk menerima notifikasi lowongan dan informasi terkait karir dari rumah sakit
+                            ini
+                        </label>
+                    </div>
+
+                    <button type="submit" class="notify-btn">
+                        <i class="fas fa-bell me-2"></i>Daftarkan Saya untuk Notifikasi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Journey Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Perjalanan Karir Bersama Kami</h2>
+            <p class="section-subtitle" data-aos="fade-up">Langkah-langkah menjadi bagian dari keluarga besar rumah
+                sakit</p>
+
+            <div class="career-journey" data-aos="fade-up" data-aos-delay="200">
+                <div class="journey-timeline">
+                    <div class="journey-step">
+                        <div class="journey-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h4>1. Daftarkan Diri Anda</h4>
+                            <p>Isi form notifikasi di atas atau kirim CV Anda langsung ke email HR kami. Kami akan
+                                menyimpan data Anda dalam database kandidat.</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-step">
+                        <div class="journey-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h4>2. Pencarian Aktif</h4>
+                            <p>Tim HR kami akan mencocokkan profil Anda dengan lowongan yang tersedia. Kami akan
+                                menghubungi Anda jika ada posisi yang sesuai.</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-step">
+                        <div class="journey-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h4>3. Proses Seleksi</h4>
+                            <p>Wawancara dan tes sesuai posisi yang dilamar. Kami menghargai transparansi dalam proses
+                                seleksi untuk hasil terbaik.</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-step">
+                        <div class="journey-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="journey-content">
+                            <h4>4. Welcome to the Team!</h4>
+                            <p>Orientasi lengkap, training, dan integrasi dengan tim. Mulai perjalanan karir Anda
+                                bersama kami!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Us Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Mengapa Menunggu Bersama Kami?</h2>
+            <p class="section-subtitle" data-aos="fade-up">Alasan mengapa profesional terbaik memilih berkarir di sini
+            </p>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-join-card">
+                        <div class="why-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="why-title">Misi Mulia</h4>
+                        <p>Berkontribusi langsung dalam memberikan pelayanan kesehatan terbaik untuk masyarakat
+                            Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-join-card">
+                        <div class="why-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="why-title">Pengembangan Berkelanjutan</h4>
+                        <p>Program pelatihan, sertifikasi, dan jalur karir yang jelas untuk kemajuan profesional jangka
+                            panjang</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-join-card">
+                        <div class="why-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="why-title">Tim yang Solid</h4>
+                        <p>Bekerja bersama profesional berpengalaman dalam lingkungan kerja yang mendukung dan
+                            kolaboratif</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-join-card">
+                        <div class="why-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4 class="why-title">Kompensasi Kompetitif</h4>
+                        <p>Gaji sesuai standar industri plus benefit lengkap: asuransi, tunjangan, dan program wellness
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-join-card">
+                        <div class="why-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <h4 class="why-title">Teknologi Terdepan</h4>
+                        <p>Akses ke peralatan medis dan sistem informasi terbaru untuk mendukung pelayanan prima</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="why-join-card">
+                        <div class="why-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4 class="why-title">Work-Life Balance</h4>
+                        <p>Jadwal kerja yang seimbang dengan program kesehatan karyawan dan fasilitas rekreasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Rumah Sakit dalam Angka</h2>
+            <p class="section-subtitle" data-aos="fade-up">Prestasi yang membanggakan sebagai institusi kesehatan
+                terpercaya</p>
+
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-number" data-count="500">0</span>
+                    <div class="stat-label">Karyawan Profesional</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-number" data-count="15">0</span>
+                    <div class="stat-label">Departemen Medis</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-number" data-count="98">0</span>
+                    <div class="stat-label">% Kepuasan Karyawan</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <span class="stat-number" data-count="25">0</span>
+                    <div class="stat-label">Tahun Pengalaman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="social-proof" data-aos="fade-up">
+                <h2 class="section-title">Apa Kata Karyawan Kami?</h2>
+                <p class="section-subtitle">Pengalaman nyata dari tim yang sudah bergabung</p>
+
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "Bekerja di sini memberikan saya kesempatan untuk berkembang baik secara profesional
+                                maupun personal.
+                                Tim yang solid dan managemen yang supportif membuat saya betah bekerja di sini."
+                            </p>
+                            <div class="testimonial-author">Dr. Sarah Melati</div>
+                            <div class="testimonial-role">Dokter Spesialis Anak</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "Fasilitas kerja yang modern dan program training yang berkelanjutan membuat saya selalu
+                                up-to-date
+                                dengan perkembangan terbaru di dunia keperawatan."
+                            </p>
+                            <div class="testimonial-author">Ns. Rina Kartika</div>
+                            <div class="testimonial-role">Kepala Perawat ICU</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding"
+        style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+        <div class="container text-center text-white">
+            <h2 class="section-title text-white" data-aos="fade-up">Hubungi Tim HR Kami</h2>
+            <p class="section-subtitle text-white opacity-75" data-aos="fade-up">Punya pertanyaan tentang karir atau
+                ingin mengirim CV langsung?</p>
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-4 mb-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-envelope me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong>Email HR</strong><br>
+                            <a href="mailto:hr@hospital.com" class="text-white">hr@hospital.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-phone me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong>Telepon</strong><br>
+                            <a href="tel:+622112345678" class="text-white">(021) 1234-5678</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-clock me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong>Jam Layanan</strong><br>
+                            <span>Senin - Jumat: 08:00-17:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="mailto:hr@hospital.com?subject=Lamaran Kerja - Kirim CV"
+                    class="btn btn-light btn-lg me-3 mb-2">
+                    <i class="fas fa-paper-plane me-2"></i>Kirim CV Langsung
+                </a>
+                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik untuk mengetahui info lowongan kerja"
+                    class="btn btn-outline-light btn-lg mb-2" target="_blank">
+                    <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+                </a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-body p-5">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle" style="font-size: 4rem; color: var(--success-color);"></i>
+                    </div>
+                    <h4 class="mb-3">Pendaftaran Notifikasi Berhasil!</h4>
+                    <p class="text-muted mb-4">
+                        Terima kasih telah mendaftar. Kami akan menghubungi Anda melalui email atau telepon
+                        ketika ada lowongan yang sesuai dengan profil Anda.
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Handle Notification Form Submission
+        document.getElementById('notificationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Mendaftarkan...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success modal
+                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                successModal.show();
+
+                // Reset form
+                this.reset();
+
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+
+                // Add success animation to notification form
+                const notificationForm = document.querySelector('.notification-form');
+                notificationForm.style.background = 'linear-gradient(135deg, #f0fff4, #e6fffa)';
+                notificationForm.style.borderColor = 'var(--success-color)';
+
+                setTimeout(() => {
+                    notificationForm.style.background = '';
+                    notificationForm.style.borderColor = '';
+                }, 3000);
+
+            }, 2000);
+        });
+
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const increment = target / 50;
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + (target === 98 ? '%' : '+');
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + (target === 98 ? '%' : '+');
+                    }
+                }, 50);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-grid');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Enhanced form validation
+        const form = document.getElementById('notificationForm');
+        const inputs = form.querySelectorAll('input[required], select[required]');
+
+        inputs.forEach(input => {
+            input.addEventListener('blur', function () {
+                validateField(this);
+            });
+
+            input.addEventListener('input', function () {
+                if (this.classList.contains('is-invalid')) {
+                    validateField(this);
+                }
+            });
+        });
+
+        function validateField(field) {
+            const value = field.value.trim();
+            const isValid = field.checkValidity() && value !== '';
+
+            if (isValid) {
+                field.classList.remove('is-invalid');
+                field.classList.add('is-valid');
+                removeFeedback(field);
+            } else {
+                field.classList.remove('is-valid');
+                field.classList.add('is-invalid');
+                showFeedback(field, getValidationMessage(field));
+            }
+        }
+
+        function getValidationMessage(field) {
+            if (field.type === 'email' && field.value) {
+                return 'Format email tidak valid';
+            }
+            if (field.type === 'tel' && field.value) {
+                return 'Format nomor telepon tidak valid';
+            }
+            return 'Field ini wajib diisi';
+        }
+
+        function showFeedback(field, message) {
+            removeFeedback(field);
+            const feedback = document.createElement('div');
+            feedback.className = 'invalid-feedback';
+            feedback.textContent = message;
+            field.parentNode.appendChild(feedback);
+        }
+
+        function removeFeedback(field) {
+            const existingFeedback = field.parentNode.querySelector('.invalid-feedback');
+            if (existingFeedback) {
+                existingFeedback.remove();
+            }
+        }
+
+        // Email validation
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Phone validation (Indonesian format)
+        function isValidPhone(phone) {
+            const phoneRegex = /^(\+62|62|0)8[1-9][0-9]{6,9}$/;
+            return phoneRegex.test(phone.replace(/\D/g, ''));
+        }
+
+        // Auto-format phone number
+        document.querySelector('input[name="phone"]').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+
+            if (value.startsWith('08')) {
+                value = '+62' + value.substring(1);
+            } else if (value.startsWith('8')) {
+                value = '+62' + value;
+            } else if (value.startsWith('62')) {
+                value = '+' + value;
+            }
+
+            e.target.value = value;
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation when external links are clicked
+        document.querySelectorAll('a[href^="mailto:"], a[href^="tel:"], a[href^="https://wa.me"]').forEach(link => {
+            link.addEventListener('click', function () {
+                // Add subtle loading effect
+                this.style.opacity = '0.7';
+                this.style.transform = 'scale(0.98)';
+
+                setTimeout(() => {
+                    this.style.opacity = '';
+                    this.style.transform = '';
+                }, 200);
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.career-hero');
+            if (hero) {
+                const speed = scrolled * 0.5;
+                hero.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Add typing effect to hero subtitle
+        function typeWriter(element, text, speed = 50) {
+            let i = 0;
+            element.textContent = '';
+
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+
+            type();
+        }
+
+        // Initialize typing effect when page loads
+        window.addEventListener('load', function () {
+            const subtitle = document.querySelector('.hero-subtitle');
+            const originalText = subtitle.textContent;
+
+            setTimeout(() => {
+                typeWriter(subtitle, originalText, 30);
+            }, 1000);
+        });
+
+        // Add floating animation to cards on hover
+        document.querySelectorAll('.why-join-card, .stat-card, .testimonial-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+                this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+
+    <!-- Additional CSS for enhanced animations -->
+    <style>
+        .is-valid {
+            border-color: var(--success-color) !important;
+        }
+
+        .is-invalid {
+            border-color: #dc3545 !important;
+        }
+
+        .invalid-feedback {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Loading overlay for buttons */
+        .btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        /* Enhanced hover effects */
+        .notification-form:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .career-journey:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Glowing effect for call-to-action buttons */
+        .btn-light:hover,
+        .btn-outline-light:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Pulse animation for important elements */
+        .no-openings-icon {
+            animation: pulse 2s infinite, float 3s ease-in-out infinite;
+        }
+
+        /* Gradient text animation */
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</body>
+
+</html>
