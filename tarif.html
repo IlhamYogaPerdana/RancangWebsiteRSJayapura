@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link href="assets/css/styletarif.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-globe"></i>
+                        <span>ID</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="tariff-hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Daftar Tarif Layanan</h1>
+                <p class="hero-subtitle">Temukan paket layanan kesehatan terbaik dengan harga transparan dan terjangkau
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Filter Sidebar -->
+            <div class="col-lg-3">
+                <div class="filter-section" data-aos="fade-right">
+                    <div class="filter-card">
+                        <h3 class="filter-title">Filter</h3>
+
+                        <!-- Service Type Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Tipe</label>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-filter="all">Medical Check-Up</button>
+                                <button class="filter-btn" data-filter="lab">Lab</button>
+                                <button class="filter-btn" data-filter="radiologi">Radiologi</button>
+                                <button class="filter-btn" data-filter="home">RSUP Jayapura at Home</button>
+                            </div>
+                        </div>
+
+                        <!-- Age Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Usia</label>
+                            <select class="form-select">
+                                <option selected>Pilih Usia</option>
+                                <option value="child">Anak-anak (0-17 tahun)</option>
+                                <option value="adult">Dewasa (18-59 tahun)</option>
+                                <option value="elderly">Lansia (60+ tahun)</option>
+                            </select>
+                        </div>
+
+                        <!-- Gender Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Jenis Kelamin</label>
+                            <select class="form-select">
+                                <option selected>Pilih Jenis Kelamin</option>
+                                <option value="male">Pria</option>
+                                <option value="female">Wanita</option>
+                                <option value="both">Pria & Wanita</option>
+                            </select>
+                        </div>
+
+                        <!-- Price Range Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Harga</label>
+                            <select class="form-select">
+                                <option selected>Semua Harga</option>
+                                <option value="0-500000">Di bawah Rp500.000</option>
+                                <option value="500000-1000000">Rp500.000 - Rp1.000.000</option>
+                                <option value="1000000-2000000">Rp1.000.000 - Rp2.000.000</option>
+                                <option value="2000000+">Di atas Rp2.000.000</option>
+                            </select>
+                        </div>
+
+                        <!-- Location Filter -->
+                        <div class="filter-group">
+                            <label class="filter-label">Urutkan Dari</label>
+                            <select class="form-select">
+                                <option selected>Harga Terendah</option>
+                                <option value="highest">Harga Tertinggi</option>
+                                <option value="popular">Paling Populer</option>
+                                <option value="newest">Terbaru</option>
+                            </select>
+                        </div>
+
+                        <button class="reset-btn mt-3">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Content -->
+            <div class="col-lg-9">
+                <div class="content-section">
+                    <!-- Services Header -->
+                    <div class="services-header" data-aos="fade-up">
+                        <h2 class="services-title">Semua Layanan (45)</h2>
+                        <p class="services-count">Menampilkan paket layanan kesehatan terlengkap</p>
+                    </div>
+
+                    <!-- Popular Services -->
+                    <div class="popular-services" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="popular-title">
+                            <i class="fas fa-fire text-warning"></i>
+                            Layanan Paling Populer
+                        </h3>
+                        <div class="popular-grid">
+                            <div class="popular-item">
+                                <div class="popular-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="popular-info">
+                                    <h5>Medical Check-Up</h5>
+                                    <p>Pemeriksaan kesehatan menyeluruh</p>
+                                </div>
+                            </div>
+                            <div class="popular-item">
+                                <div class="popular-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <div class="popular-info">
+                                    <h5>Tes Laboratorium</h5>
+                                    <p>Pemeriksaan lab lengkap</p>
+                                </div>
+                            </div>
+                            <div class="popular-item">
+                                <div class="popular-icon">
+                                    <i class="fas fa-x-ray"></i>
+                                </div>
+                                <div class="popular-info">
+                                    <h5>Radiologi</h5>
+                                    <p>Pemeriksaan imaging canggih</p>
+                                </div>
+                            </div>
+                            <div class="popular-item">
+                                <div class="popular-icon">
+                                    <i class="fas fa-home-heart"></i>
+                                </div>
+                                <div class="popular-info">
+                                    <h5>Home Care</h5>
+                                    <p>Layanan kesehatan di rumah</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Grid -->
+                    <div class="services-grid" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Service Card 1 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge popular">TERPOPULER</div>
+                                <div class="service-title">Paket Siloam Silver</div>
+                                <div class="service-category">Skrining Umum</div>
+                                <div class="service-tests">23 Test</div>
+                                <div class="service-price">Rp1.900.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 5 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Complete Vitamin D Screening</div>
+                                <div class="service-category">Skrining Lite</div>
+                                <div class="service-tests">6 Test</div>
+                                <div class="service-price">Rp1.100.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 6 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Corporate Driver MCU Package</div>
+                                <div class="service-category">Skrining Prakerja</div>
+                                <div class="service-tests">8 Test</div>
+                                <div class="service-price">Rp1.350.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 7 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Diver MCU Package</div>
+                                <div class="service-category">Skrining Khusus</div>
+                                <div class="service-tests">16 Test</div>
+                                <div class="service-price">Rp1.500.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 8 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Food Handler MCU Package</div>
+                                <div class="service-category">Skrining Pangan</div>
+                                <div class="service-tests">12 Test</div>
+                                <div class="service-price">Rp850.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 9 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Kanker Hati Komprehensif</div>
+                                <div class="service-category">Skrining Kanker</div>
+                                <div class="service-tests">15 Test</div>
+                                <div class="service-price">Rp2.750.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 10 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Paket Medical Check-Up Gold</div>
+                                <div class="service-category">Skrining Premium</div>
+                                <div class="service-tests">35 Test</div>
+                                <div class="service-price">Rp3.500.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 11 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Diabetes Screening Package</div>
+                                <div class="service-category">Skrining Diabetes</div>
+                                <div class="service-tests">8 Test</div>
+                                <div class="service-price">Rp650.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 12 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Heart Health Screening</div>
+                                <div class="service-category">Skrining Jantung</div>
+                                <div class="service-tests">10 Test</div>
+                                <div class="service-price">Rp1.200.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">SKRINING TBC UNTUK VISA - BASIC</div>
+                                <div class="service-category">Skrining Visa</div>
+                                <div class="service-tests">2 Test</div>
+                                <div class="service-price">Rp400.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Skrining Pelari</div>
+                                <div class="service-category">Skrining Olahraga</div>
+                                <div class="service-tests">20 Test</div>
+                                <div class="service-price">Rp5.200.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Back Office MCU Package</div>
+                                <div class="service-category">Skrining Prakerja</div>
+                                <div class="service-tests">16 Test</div>
+                                <div class="service-price">Rp1.500.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 5 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Complete Vitamin D Screening</div>
+                                <div class="service-category">Skrining Lite</div>
+                                <div class="service-tests">6 Test</div>
+                                <div class="service-price">Rp1.100.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 6 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Corporate Driver MCU Package</div>
+                                <div class="service-category">Skrining Prakerja</div>
+                                <div class="service-tests">8 Test</div>
+                                <div class="service-price">Rp1.350.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 7 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Diver MCU Package</div>
+                                <div class="service-category">Skrining Khusus</div>
+                                <div class="service-tests">16 Test</div>
+                                <div class="service-price">Rp1.500.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 8 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Food Handler MCU Package</div>
+                                <div class="service-category">Skrining Pangan</div>
+                                <div class="service-tests">12 Test</div>
+                                <div class="service-price">Rp850.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 9 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Kanker Hati Komprehensif</div>
+                                <div class="service-category">Skrining Kanker</div>
+                                <div class="service-tests">15 Test</div>
+                                <div class="service-price">Rp2.750.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 10 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Paket Medical Check-Up Gold</div>
+                                <div class="service-category">Skrining Premium</div>
+                                <div class="service-tests">35 Test</div>
+                                <div class="service-price">Rp3.500.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 11 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Diabetes Screening Package</div>
+                                <div class="service-category">Skrining Diabetes</div>
+                                <div class="service-tests">8 Test</div>
+                                <div class="service-price">Rp650.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 12 -->
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-badge">TERPOPULER</div>
+                                <div class="service-title">Heart Health Screening</div>
+                                <div class="service-category">Skrining Jantung</div>
+                                <div class="service-tests">10 Test</div>
+                                <div class="service-price">Rp1.200.000</div>
+                            </div>
+                            <div class="service-actions">
+                                <button class="btn-favorite" title="Tambah ke Favorit">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-outline-primary">Lihat Detail</button>
+                                <button class="btn-primary">+ Keranjang</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Home Care Banner -->
+                    <div class="home-care-banner" data-aos="fade-up" data-aos-delay="300">
+                        <div class="banner-content">
+                            <h3 class="banner-title">RSUP Jayapura at Home</h3>
+                            <p class="banner-subtitle">Dapatkan layanan kesehatan terbaik di kenyamanan rumah Anda</p>
+                            <button class="banner-btn">
+                                <i class="fas fa-home me-2"></i>Lihat Layanan Home Care
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination-section" data-aos="fade-up" data-aos-delay="400">
+                        <div class="pagination">
+                            <a href="#" class="page-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#" class="page-btn active">1</a>
+                            <a href="#" class="page-btn">2</a>
+                            <a href="#" class="page-btn">3</a>
+                            <span class="page-info">...</span>
+                            <a href="#" class="page-btn">8</a>
+                            <a href="#" class="page-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                // Show/hide cards based on filter
+                serviceCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        // You can implement actual filtering logic here
+                        card.style.display = 'block';
+                    }
+                });
+            });
+        });
+
+        // Favorite functionality
+        const favoriteButtons = document.querySelectorAll('.btn-favorite');
+
+        favoriteButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+                const icon = btn.querySelector('i');
+                if (btn.classList.contains('active')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                }
+            });
+        });
+
+        // Reset filters
+        const resetBtn = document.querySelector('.reset-btn');
+        resetBtn.addEventListener('click', () => {
+            // Reset filter buttons
+            filterBtns.forEach(btn => btn.classList.remove('active'));
+            filterBtns[0].classList.add('active');
+
+            // Reset select elements
+            const selects = document.querySelectorAll('.form-select');
+            selects.forEach(select => {
+                select.selectedIndex = 0;
+            });
+
+            // Show all cards
+            serviceCards.forEach(card => {
+                card.style.display = 'block';
+            });
+        });
+
+        // Add to cart functionality
+        const cartButtons = document.querySelectorAll('.btn-primary');
+        let cartCount = 0;
+
+        cartButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                cartCount++;
+
+                // Create a temporary animation
+                const originalText = btn.textContent;
+                btn.textContent = 'Ditambahkan!';
+                btn.style.background = 'var(--success-color)';
+
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                }, 1500);
+
+                // You can add actual cart functionality here
+                console.log('Item added to cart. Total items:', cartCount);
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Loading animation for service cards
+        const loadMoreCards = () => {
+            // Simulate loading more cards
+            const grid = document.querySelector('.services-grid');
+            const loader = document.createElement('div');
+            loader.className = 'loading-skeleton';
+            loader.style.height = '200px';
+            loader.style.borderRadius = '20px';
+
+            grid.appendChild(loader);
+
+            setTimeout(() => {
+                grid.removeChild(loader);
+            }, 2000);
+        };
+
+        // Price formatting
+        const formatPrice = (price) => {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(price);
+        };
+    </script>
+
+</body>
+
+</html>
