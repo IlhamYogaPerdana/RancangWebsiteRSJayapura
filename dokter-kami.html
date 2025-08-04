@@ -102,167 +102,193 @@
     </section>
 
 
-    <section id="" class="py-4 py-md-5 loading">
+    <section id="" class="loading">
         <div class="container">
-
             <div class="row">
-                <div class="col-md-3">
-                    <form action="">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Masukan nama dokter">
-                        </div>
-                        <!-- Divider dengan text "atau" -->
-                        <div class="divider-container">
-                            <div class="divider-line"></div>
-                            <span class="divider-text">atau</span>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label fw-semibold">Pilih Spesialis</label>
-                            <div class="btn-group-custom" id="spesialis">
-                                <button type="button" class="btn" data-specialty="penyakit-dalam">Penyakit
-                                    Dalam</button>
-                                <button type="button" class="btn" data-specialty="anak">Anak</button>
-                                <button type="button" class="btn" data-specialty="jantung">Jantung</button>
-                                <button type="button" class="btn" data-specialty="mata">Mata</button>
-                                <button type="button" class="btn" data-specialty="kulit">Kulit</button>
-                                <button type="button" class="btn" data-specialty="bedah">Bedah</button>
-                                <button type="button" class="btn" data-specialty="obgyn">Obgyn</button>
+                <div class="col-lg-3 py-5">
+                    <div class="filter-section" data-aos="fade-right">
+                        <div class="filter-card">
+                            <h3 class="filter-title">Filter</h3>
+                            <div class="filter-group">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Masukan nama dokter">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label fw-semibold">Pilih Hari</label>
-                            <div class="btn-group-custom" id="hari">
-                                <button type="button" class="btn" data-specialty="senin">Senin</button>
-                                <button type="button" class="btn" data-specialty="selasa">Selasa</button>
-                                <button type="button" class="btn" data-specialty="rabu">Rabu</button>
-                                <button type="button" class="btn" data-specialty="kamis">Kamis</button>
-                                <button type="button" class="btn" data-specialty="jumat">Jumat</button>
+                            <!-- Divider dengan text "atau" -->
+                            <div class="divider-container">
+                                <div class="divider-line"></div>
+                                <span class="divider-text">atau</span>
                             </div>
+                            <!-- Spesialis Filter -->
+                            <div class="filter-group">
+                                <label class="filter-label">Spesialis</label>
+                                <select class="form-select">
+                                    <option selected>Pilih Spesialis</option>
+                                    <option value="child">Penyakit Dalam</option>
+                                    <option value="adult">Obgyn</option>
+                                    <option value="elderly">Kulit dan Kelamin</option>
+                                </select>
+                            </div>
+
+                            <!-- Hari Filter -->
+                            <div class="filter-group">
+                                <label class="filter-label">Hari</label>
+                                <select class="form-select">
+                                    <option selected>Pilih Hari</option>
+                                    <option value="senin">Senin</option>
+                                    <option value="selasa">Selasa</option>
+                                    <option value="rabu">Rabu</option>
+                                    <option value="kamis">Kamis</option>
+                                    <option value="jumat">Jumat</option>
+                                </select>
+                            </div>
+
+                            <!-- Price Range Filter -->
+                            <!-- <div class="filter-group">
+                                <label class="filter-label">Hari</label>
+                                <select class="form-select">
+                                    <option selected>Semua Harga</option>
+                                    <option value="0-500000">Di bawah Rp500.000</option>
+                                    <option value="500000-1000000">Rp500.000 - Rp1.000.000</option>
+                                    <option value="1000000-2000000">Rp1.000.000 - Rp2.000.000</option>
+                                    <option value="2000000+">Di atas Rp2.000.000</option>
+                                </select>
+                            </div> -->
+
+                            <button class="reset-btn mt-3">Reset</button>
                         </div>
-                        <div class="form-group">
-                            <label for="waktu">Waktu</label>
-                            <select type="text" id="waktu" name="waktu" class="form-control rounded-pill select-custom">
-                                <option>---Pilih Waktu---</option>
-                            </select>
-                        </div>
-                        <div class="text-end">
-                            <button class="btn newsletter-btn my-3 w-100 w-sm-auto">Cari</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+
                 <div class="col-md-9">
+                    <!-- Stats Section -->
+                    <div class="stats-section my-5 mb-3" data-aos="fade-up">
+                        <h3 class="stats-title">Tim Dokter RSUP Jayapura</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="stat-number">152</div>
+                                <div class="stat-label">Total Dokter</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="stat-number">25</div>
+                                <div class="stat-label">Spesialisasi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Layanan Darurat</div>
+                            </div>
+                            <!-- <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-number">4.8</div>
+                                <div class="stat-label">Rating Rata-rata</div>
+                            </div> -->
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card shadow-sm border-0 mb-2">
-                                <div class="card-body p-3">
-                                    <div class="d-flex align-items-start">
-                                        <!-- Doctor Image -->
-                                        <div class="flex-shrink-0 me-3">
-                                            <div class="bg-success rounded"
-                                                style="width: 75px; height: 100px; overflow: hidden;">
-                                                <img src="assets/images/amos.png" alt="Dr. Amos Pongbulaan"
-                                                    class="img-fluid w-100 h-100" style="object-fit: cover;">
-                                            </div>
+                            <!-- Doctor Card 1 -->
+                            <div class="doctor-card">
+                                <div class="doctor-header pb-0">
+                                    <div class="doctor-status">TERSEDIA</div>
+                                    <div class="doctor-avatar">
+                                        <img src="assets/images/amos.png" class="img-circle" alt="">
+                                    </div>
+                                    <div class="doctor-name">dr. Ahmad Fadli, Sp.PD</div>
+                                    <div class="doctor-specialty">Spesialis Penyakit Dalam</div>
+                                    <div class="doctor-experience">12 tahun pengalaman</div>
+                                    <div class="doctor-info">
+                                        <div class="info-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Poliklinik Anak</span>
                                         </div>
-
-                                        <!-- Doctor Info -->
-                                        <div class="flex-grow-1">
-                                            <h6 class="card-title mb-1 fw-bold text-dark">Dr. Amos Pongbulaan</h6>
-                                            <p class="text-muted small mb-1">Spesialis Penyakit Dalam</p>
-                                            <p class="text-muted small mb-2">Penyakit Dalam</p>
-
-                                            <!-- Schedule -->
-                                            <div class="d-flex align-items-center">
-                                                <small class="text-muted">
-                                                    <i class="far fa-calendar-alt me-1"></i>
-                                                    Rabu dan Jumat
-                                                </small>
+                                        <div class="info-item rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
-                                            <div class="d-flex align-items-center mt-1">
-                                                <small class="text-muted">
-                                                    <i class="far fa-clock me-1"></i>
-                                                    08:00 - 16:00 WIT
-                                                </small>
-                                            </div>
+                                            <span>4.8 (89 ulasan)</span>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="doctor-schedule">
+                                    <div class="schedule-title">Jadwal Praktik :</div>
+                                    <div class="schedule-times">
+                                        <div class="d-block">
+                                            <span class="time-slot">Senin</span>
+                                            <span class="time-slot">15:00-17:00</span>
+                                            <span class="time-slot">15:00-17:00</span>
+                                        </div>
+                                        <div class="d-block">
+                                            <span class="time-slot">Kamis, 15:00-17:00</span>
+                                            <!-- <span class="time-slot">15:00-17:00</span> -->
+                                            <!-- <span class="time-slot"></span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn-outline-primary">Lihat Profil</button>
+                                    <button class="btn-primary">Buat Janji</button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card shadow-sm border-0 mb-2">
-                                <div class="card-body p-3">
-                                    <div class="d-flex align-items-start">
-                                        <!-- Doctor Image -->
-                                        <div class="flex-shrink-0 me-3">
-                                            <div class="bg-success rounded"
-                                                style="width: 75px; height: 100px; overflow: hidden;">
-                                                <img src="assets/images/amos.png" alt="Dr. Amos Pongbulaan"
-                                                    class="img-fluid w-100 h-100" style="object-fit: cover;">
-                                            </div>
+                            <!-- Doctor Card 3 -->
+                            <div class="doctor-card">
+                                <div class="doctor-header">
+                                    <div class="doctor-status offline">TIDAK TERSEDIA</div>
+                                    <div class="doctor-avatar">
+                                        <i class="fas fa-user-md"></i>
+                                    </div>
+                                    <div class="doctor-name">dr. Michael Tanggua, Sp.B</div>
+                                    <div class="doctor-specialty">Spesialis Bedah Umum</div>
+                                    <div class="doctor-experience">15 tahun pengalaman</div>
+                                    <div class="doctor-info">
+                                        <div class="info-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Poliklinik Bedah</span>
                                         </div>
-
-                                        <!-- Doctor Info -->
-                                        <div class="flex-grow-1">
-                                            <h6 class="card-title mb-1 fw-bold text-dark">Dr. Amos Pongbulaan</h6>
-                                            <p class="text-muted small mb-1">Spesialis Penyakit Dalam</p>
-                                            <p class="text-muted small mb-2">Penyakit Dalam</p>
-
-                                            <!-- Schedule -->
-                                            <div class="d-flex align-items-center">
-                                                <small class="text-muted">
-                                                    <i class="far fa-calendar-alt me-1"></i>
-                                                    Rabu dan Jumat
-                                                </small>
+                                        <div class="info-item rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
-                                            <div class="d-flex align-items-center mt-1">
-                                                <small class="text-muted">
-                                                    <i class="far fa-clock me-1"></i>
-                                                    08:00 - 16:00 WIT
-                                                </small>
-                                            </div>
+                                            <span>4.9 (156 ulasan)</span>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card shadow-sm border-0 mb-2">
-                                <div class="card-body p-3">
-                                    <div class="d-flex align-items-start">
-                                        <!-- Doctor Image -->
-                                        <div class="flex-shrink-0 me-3">
-                                            <div class="bg-success rounded"
-                                                style="width: 75px; height: 100px; overflow: hidden;">
-                                                <img src="assets/images/amos.png" alt="Dr. Amos Pongbulaan"
-                                                    class="img-fluid w-100 h-100" style="object-fit: cover;">
-                                            </div>
-                                        </div>
-
-                                        <!-- Doctor Info -->
-                                        <div class="flex-grow-1">
-                                            <h6 class="card-title mb-1 fw-bold text-dark">Dr. Amos Pongbulaan</h6>
-                                            <p class="text-muted small mb-1">Spesialis Penyakit Dalam</p>
-                                            <p class="text-muted small mb-2">Penyakit Dalam</p>
-
-                                            <!-- Schedule -->
-                                            <div class="d-flex align-items-center">
-                                                <small class="text-muted">
-                                                    <i class="far fa-calendar-alt me-1"></i>
-                                                    Rabu dan Jumat
-                                                </small>
-                                            </div>
-                                            <div class="d-flex align-items-center mt-1">
-                                                <small class="text-muted">
-                                                    <i class="far fa-clock me-1"></i>
-                                                    08:00 - 16:00 WIT
-                                                </small>
-                                            </div>
-                                        </div>
+                                <div class="doctor-schedule">
+                                    <div class="schedule-title">Jadwal Praktik Besok:</div>
+                                    <div class="schedule-times">
+                                        <span class="time-slot">07:00-11:00</span>
+                                        <span class="time-slot">13:00-15:00</span>
                                     </div>
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn-outline-primary">Lihat Profil</button>
+                                    <button class="btn-primary">Buat Janji</button>
                                 </div>
                             </div>
                         </div>
+
+                        
                     </div>
                     <div class="row">
                         <div class="col py-5">
