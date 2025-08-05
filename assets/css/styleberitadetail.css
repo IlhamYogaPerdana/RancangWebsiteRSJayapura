@@ -33,6 +33,11 @@
     object-fit: cover;
 }
 
+.thumbnail-caption{
+    font-size: 10pt;
+    margin-top: 5px;
+}
+
 .article-content {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -139,3 +144,9 @@
     /* z-index: 1000000; */
     transition: width 0.1s ease;
 }
+
+.sticky-sidebar {
+    position: sticky;
+    top: 100px; /* sesuaikan dengan tinggi navbar atau header */
+}
+

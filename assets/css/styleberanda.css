@@ -93,7 +93,8 @@ img {
 
 .dropdown-menu {
     border: none !important;
-    box-shadow: none !important; /* opsional jika ingin menghilangkan bayangan juga */
+    box-shadow: none !important;
+    /* opsional jika ingin menghilangkan bayangan juga */
 }
 
 @media (max-width: 991px) {
@@ -179,7 +180,8 @@ img {
 .service-card {
     display: flex;
     flex-direction: column;
-    flex-direction: row; /* Atau responsif via breakpoint */
+    flex-direction: row;
+    /* Atau responsif via breakpoint */
     background-color: white;
     border-radius: 14px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -190,8 +192,8 @@ img {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding-top: 0!important;
-    padding-bottom: 0!important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .service-card:hover {
@@ -203,20 +205,20 @@ img {
 
 .service-section .service-card i {
     margin-top: 15px !important;
-    min-width: 40px!important;
+    min-width: 40px !important;
 }
 
 .service-icon {
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     text-align: center;
     color: var(--secondary-color);
     border-radius: 50%;
     transition: color 0.3s ease;
-    margin-bottom: 15px!important;
-    width: 40px!important;
-    height: 40px!important;
+    margin-bottom: 15px !important;
+    width: 40px !important;
+    height: 40px !important;
     line-height: 1;
 }
 
@@ -227,8 +229,8 @@ img {
 .service-card:hover .service-icon {
     background-color: var(--accent-color);
     color: var(--secondary-color);
-    width: 40px!important;
-    height: 40px!important;
+    width: 40px !important;
+    height: 40px !important;
 }
 
 .tarif-badge {
@@ -347,7 +349,8 @@ img {
 }
 
 .slider-btn::after {
-    font-size: 1rem; /* atau 0.875rem, atau sesuai kebutuhan */
+    font-size: 1rem;
+    /* atau 0.875rem, atau sesuai kebutuhan */
     line-height: 1;
 }
 
@@ -384,12 +387,27 @@ img {
 
 /* Articles Section - Enhanced Responsive */
 .article-card {
+    position: relative;
     background-color: var(--article-bg);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+}
+
+.article-category {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    z-index: 10;
 }
 
 .article-card:hover {

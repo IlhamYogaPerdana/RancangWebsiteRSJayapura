@@ -78,12 +78,21 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="berita.html">Artikel</a></li>
-                    <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
                     <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
                     <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
                 </ul>
             </div>
         </div>
@@ -147,8 +156,10 @@
 
                     <!-- Hero Image -->
                     <img src="assets/images/berita.jpg" alt="Teknologi AI dalam Pengobatan Jantung"
-                        class="img-fluid hero-image mb-4">
-
+                        class="img-fluid hero-image thumbnail">
+                    <div class="thumbnail-caption">
+                        <p>Foto: Ini adalah caption dari gambar thumbnail</p>
+                    </div>
                     <!-- Article Content -->
                     <div class="article-content">
                         <p class="lead">
@@ -240,6 +251,35 @@
                             tetapi juga daerah terpencil melalui sistem telemedicine.
                         </p>
                     </div>
+                    <div class="reference">
+
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Referensi
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body rounded-none">
+                                <p class="mb-0">
+                                    Selman, et al. (2022). Maximizing Recovery in the Postpartum Period: A Timeline for
+                                    Rehabilitation from Pregnancy Through Return to Sport. International Journal of
+                                    Sports
+                                    Physical Therapy, 17(6), pp. 170.
+                                </p>
+                                <p class="mb-0">
+                                    National Health Service UK (2024). Your Body after the Birth.
+                                </p>
+                                <p class="mb-0">
+                                    Cleveland Clinic (2022). Episiotomy.
+                                </p>
+                                <p class="mb-0">
+                                    Mayo Clinic (2023). Labor and Delivery, Postpartum Care.
+                                </p>
+                                <p class="mb-0">
+                                    Hersh, E. Healthline. What You Need to Know About Natural Birth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Share Buttons -->
                     <div class="share-buttons text-center my-5">
@@ -270,94 +310,104 @@
 
                 <!-- Sidebar -->
                 <div class="col-lg-4">
-                    <!-- Related Articles -->
-                    <div class="card border-0 shadow-sm mb-4">
-                        <div class="card-header bg-white border-0">
-                            <h5 class="mb-0"><i class="fas fa-newspaper text-primary me-2"></i>Berita Terkait</h5>
+                    <div class="sticky-sidebar">
+                        <!-- Related Articles -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-header bg-white border-0">
+                                <h5 class="mb-0"><i class="fas fa-newspaper text-primary me-2"></i>Berita Terkait</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <!-- Related Article 1 -->
+                                <div class="related-article">
+                                    <img src="assets/images/ginjal.jpg" alt="Telemedicine" class="img-fluid">
+                                    <div class="p-3">
+                                        <h6><a href="#" class="text-decoration-none text-dark">Perkembangan Telemedicine
+                                                di
+                                                Indonesia Pasca Pandemi</a></h6>
+                                        <p class="small text-muted mb-2">Sistem konsultasi online semakin berkembang dan
+                                            memberikan kemudahan akses kesehatan...</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-calendar-alt me-1"></i>20 Juli 2025
+                                        </small>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+
+                                <!-- Related Article 2 -->
+                                <div class="related-article">
+                                    <img src="assets/images/img_image_1.png" alt="Penelitian Medis" class="img-fluid">
+                                    <div class="p-3">
+                                        <h6><a href="#" class="text-decoration-none text-dark">Penelitian Terbaru:
+                                                Terapi
+                                                Gen untuk Penyakit Langka</a></h6>
+                                        <p class="small text-muted mb-2">Para ilmuwan berhasil mengembangkan terapi gen
+                                            yang
+                                            menjanjikan untuk penyakit langka...</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-calendar-alt me-1"></i>18 Juli 2025
+                                        </small>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+
+                                <!-- Related Article 3 -->
+                                <div class="related-article">
+                                    <img src="assets/images/img_image_234x422.png" alt="Alat Medis" class="img-fluid">
+                                    <div class="p-3">
+                                        <h6><a href="#" class="text-decoration-none text-dark">Inovasi Alat Medis
+                                                Portable
+                                                untuk Daerah Terpencil</a></h6>
+                                        <p class="small text-muted mb-2">Pengembangan alat medis portable membawa
+                                            harapan
+                                            baru untuk pelayanan kesehatan...</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-calendar-alt me-1"></i>15 Juli 2025
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body p-0">
-                            <!-- Related Article 1 -->
-                            <div class="related-article">
-                                <img src="assets/images/ginjal.jpg" alt="Telemedicine" class="img-fluid">
-                                <div class="p-3">
-                                    <h6><a href="#" class="text-decoration-none text-dark">Perkembangan Telemedicine di
-                                            Indonesia Pasca Pandemi</a></h6>
-                                    <p class="small text-muted mb-2">Sistem konsultasi online semakin berkembang dan
-                                        memberikan kemudahan akses kesehatan...</p>
-                                    <small class="text-muted">
-                                        <i class="fas fa-calendar-alt me-1"></i>20 Juli 2025
-                                    </small>
-                                </div>
-                            </div>
-                            <hr class="my-0">
 
-                            <!-- Related Article 2 -->
-                            <div class="related-article">
-                                <img src="assets/images/img_image_1.png" alt="Penelitian Medis" class="img-fluid">
-                                <div class="p-3">
-                                    <h6><a href="#" class="text-decoration-none text-dark">Penelitian Terbaru: Terapi
-                                            Gen untuk Penyakit Langka</a></h6>
-                                    <p class="small text-muted mb-2">Para ilmuwan berhasil mengembangkan terapi gen yang
-                                        menjanjikan untuk penyakit langka...</p>
-                                    <small class="text-muted">
-                                        <i class="fas fa-calendar-alt me-1"></i>18 Juli 2025
-                                    </small>
-                                </div>
+                        <!-- Newsletter Signup -->
+                        <div class="card border-0 shadow-sm mb-4"
+                            style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                            <div class="card-body text-white">
+                                <h5 class="text-white mb-3"><i class="fas fa-envelope me-2"></i>Newsletter</h5>
+                                <p class="small mb-3">Dapatkan berita kesehatan terbaru langsung di inbox Anda!</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Anda"
+                                            style="border-radius: 25px;">
+                                    </div>
+                                    <button type="submit" class="btn btn-light w-100" style="border-radius: 25px;">
+                                        <i class="fas fa-paper-plane me-2"></i>Berlangganan
+                                    </button>
+                                </form>
                             </div>
-                            <hr class="my-0">
+                        </div>
 
-                            <!-- Related Article 3 -->
-                            <div class="related-article">
-                                <img src="assets/images/img_image_234x422.png" alt="Alat Medis" class="img-fluid">
-                                <div class="p-3">
-                                    <h6><a href="#" class="text-decoration-none text-dark">Inovasi Alat Medis Portable
-                                            untuk Daerah Terpencil</a></h6>
-                                    <p class="small text-muted mb-2">Pengembangan alat medis portable membawa harapan
-                                        baru untuk pelayanan kesehatan...</p>
-                                    <small class="text-muted">
-                                        <i class="fas fa-calendar-alt me-1"></i>15 Juli 2025
-                                    </small>
+                        <!-- Popular Tags -->
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-white border-0">
+                                <h5 class="mb-0"><i class="fas fa-tags text-primary me-2"></i>Tag Populer</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="tags">
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Teknologi
+                                        Medis</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Jantung</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">AI</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Telemedicine</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Inovasi</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Penelitian</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Kesehatan
+                                        Digital</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Diagnosis</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Newsletter Signup -->
-                    <div class="card border-0 shadow-sm mb-4"
-                        style="background: linear-gradient(135deg, #007bff, #0056b3);">
-                        <div class="card-body text-white">
-                            <h5 class="text-white mb-3"><i class="fas fa-envelope me-2"></i>Newsletter</h5>
-                            <p class="small mb-3">Dapatkan berita kesehatan terbaru langsung di inbox Anda!</p>
-                            <form>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Anda"
-                                        style="border-radius: 25px;">
-                                </div>
-                                <button type="submit" class="btn btn-light w-100" style="border-radius: 25px;">
-                                    <i class="fas fa-paper-plane me-2"></i>Berlangganan
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- Popular Tags -->
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-header bg-white border-0">
-                            <h5 class="mb-0"><i class="fas fa-tags text-primary me-2"></i>Tag Populer</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="tags">
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">Teknologi Medis</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">Jantung</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">AI</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">Telemedicine</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">Inovasi</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">Penelitian</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">Kesehatan Digital</a>
-                                <a href="#" class="badge bg-light text-dark text-decoration-none">Diagnosis</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
