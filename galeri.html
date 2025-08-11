@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/stylegaleri.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <!-- Dropdown Bahasa -->
+                    <div class="dropdown" id="languageOptions">
+                        <button
+                            class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center gap-1 gap-md-2"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ID</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('ID')">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('EN')">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Galeri Rumah Sakit</h1>
+                <p class="hero-subtitle">Jelajahi fasilitas modern, tim profesional, dan momen-momen berharga dalam
+                    perjalanan pelayanan kesehatan kami</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Koleksi Foto & Video</h2>
+            <p class="section-subtitle" data-aos="fade-up">Dokumentasi lengkap fasilitas, kegiatan, dan pencapaian rumah
+                sakit kami</p>
+
+            <!-- Search Box -->
+            <div class="gallery-search" data-aos="fade-up">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Cari foto atau video..." id="gallerySearch">
+            </div>
+
+            <!-- Gallery Filters -->
+            <div class="gallery-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="facilities">Fasilitas</button>
+                <button class="filter-btn" data-filter="medical-team">Tim Medis</button>
+                <button class="filter-btn" data-filter="activities">Kegiatan</button>
+                <button class="filter-btn" data-filter="achievements">Prestasi</button>
+                <button class="filter-btn" data-filter="videos">Video</button>
+            </div>
+
+            <!-- Featured Gallery -->
+            <div class="featured-gallery" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-center mb-4" style="color: var(--text-dark); font-weight: 600;">📸 Foto Unggulan</h3>
+                <div class="row">
+                    <div class="col-lg-8 mb-3">
+                        <div class="featured-item">
+                            <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&h=400&fit=crop"
+                                alt="Ruang Operasi Modern" class="featured-image">
+                            <div class="featured-overlay">
+                                <h4 class="featured-title">Ruang Operasi Berteknologi Tinggi</h4>
+                                <p class="featured-description">Fasilitas bedah modern dengan peralatan terdepan untuk
+                                    memberikan pelayanan operasi terbaik</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="featured-item" style="height: 190px; margin-bottom: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=190&fit=crop"
+                                alt="Tim Medis" class="featured-image">
+                            <div class="featured-overlay">
+                                <h5 class="featured-title">Tim Medis Profesional</h5>
+                            </div>
+                        </div>
+                        <div class="featured-item" style="height: 190px;">
+                            <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=190&fit=crop"
+                                alt="Peralatan Modern" class="featured-image">
+                            <div class="featured-overlay">
+                                <h5 class="featured-title">Teknologi Canggih</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Facilities -->
+                <div class="gallery-item" data-category="facilities" data-aos="fade-up">
+                    <div class="gallery-category">Fasilitas</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Lobby & Resepsionis - Area penerimaan pasien yang nyaman dan modern">
+                        <img src="https://rspapua.id/assets/img/U0CC8uDCFSzvuO5k94VEecACXQp3Vx6qqtC7GPHU.jpg"
+                            alt="Lobby Rumah Sakit" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Pemeriksaan Kebugaran CPNS RSUP Jayapura Bareng Sipgar</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">RSUP Jayapura melakukan pemeriksaan kebugaran pegawai menggunakan
+                            aplikasi SIPGAR (Sistem Informasi Pengukuran Kebugaran). </p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-category">Fasilitas</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Kamar Rawat Inap VIP - Kenyamanan premium untuk pemulihan optimal">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
+                            alt="Kamar VIP" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Kamar Rawat Inap VIP</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Kamar premium dengan fasilitas lengkap untuk kenyamanan maksimal
+                            pasien</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-category">Fasilitas</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Ruang ICU - Unit perawatan intensif dengan monitoring canggih">
+                        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&h=250&fit=crop"
+                            alt="Ruang ICU" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Intensive Care Unit (ICU)</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Unit perawatan intensif dengan teknologi monitoring terdepan</p>
+                    </div>
+                </div>
+
+                <!-- Medical Team -->
+                <div class="gallery-item" data-category="medical-team" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-category">Tim Medis</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Dokter Spesialis - Tim ahli berpengalaman dalam berbagai bidang medis">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=250&fit=crop"
+                            alt="Dokter Spesialis" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Tim Dokter Spesialis</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Dokter spesialis berpengalaman siap memberikan pelayanan terbaik
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="medical-team" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-category">Tim Medis</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Tim Perawat - Perawatan penuh kasih dari tenaga professional">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=250&fit=crop"
+                            alt="Tim Perawat" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Tim Perawat Profesional</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Perawat terlatih memberikan asuhan keperawatan dengan penuh
+                            dedikasi</p>
+                    </div>
+                </div>
+
+                <!-- Activities -->
+                <div class="gallery-item" data-category="activities" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gallery-category">Kegiatan</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Seminar Kesehatan - Edukasi kesehatan untuk masyarakat">
+                        <img src="https://rspapua.id/assets/img/5J9YrjnVY7oASNbeJePcuQ2eFs4s4nKhD2CeDOFf.jpg"
+                            alt="Seminar Kesehatan" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Seminar Kesehatan Masyarakat</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Program edukasi kesehatan untuk meningkatkan kesadaran masyarakat
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Videos -->
+                <div class="gallery-item video-item" data-category="videos" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-category">Video</div>
+                    <div style="position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&h=250&fit=crop"
+                            alt="Video Profil" class="video-thumbnail">
+                        <div class="video-play-btn" onclick="playVideo('profile')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Profil Rumah Sakit</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Video profil lengkap fasilitas dan pelayanan rumah sakit</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="achievements" data-aos="fade-up" data-aos-delay="700">
+                    <div class="gallery-category">Prestasi</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Sertifikat Akreditasi - Pengakuan kualitas pelayanan internasional">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=250&fit=crop"
+                            alt="Sertifikat" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Sertifikat Akreditasi</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Pengakuan resmi kualitas pelayanan dari badan akreditasi</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-aos="fade-up" data-aos-delay="800">
+                    <div class="gallery-category">Fasilitas</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Laboratorium - Fasilitas pemeriksaan dengan akurasi tinggi">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop"
+                            alt="Laboratorium" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Laboratorium Modern</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Fasilitas laboratorium dengan peralatan canggih untuk diagnosis
+                            akurat</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item video-item" data-category="videos" data-aos="fade-up" data-aos-delay="900">
+                    <div class="gallery-category">Video</div>
+                    <div style="position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&h=250&fit=crop"
+                            alt="Virtual Tour" class="video-thumbnail">
+                        <div class="video-play-btn" onclick="playVideo('tour')">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Virtual Tour 360°</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Jelajahi seluruh fasilitas rumah sakit dengan tur virtual
+                            interaktif</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="gallery-category">Kegiatan</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Bakti Sosial - Program kesehatan gratis untuk masyarakat">
+                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=250&fit=crop"
+                            alt="Bakti Sosial" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Program Bakti Sosial</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Pelayanan kesehatan gratis untuk masyarakat kurang mampu</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="gallery-category">Fasilitas</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Ruang Radiologi - Teknologi imaging terdepan untuk diagnosis presisi">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&h=250&fit=crop"
+                            alt="Ruang Radiologi" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Departemen Radiologi</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Peralatan imaging canggih: CT Scan, MRI, dan USG 4D</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="medical-team" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="gallery-category">Tim Medis</div>
+                    <a href="galeri-detail.html" data-lightbox="gallery"
+                        data-title="Konsultasi Dokter - Pelayanan konsultasi professional dan ramah">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=250&fit=crop"
+                            alt="Konsultasi Dokter" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                            <div class="gallery-overlay-text">Lihat Detail</div>
+                        </div>
+                    </a>
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">Konsultasi Medis</h4>
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
+                            <i class="fas fa-calendar-alt text-muted me-2"></i>
+                            <span class="me-3">25 Juli 2025</span>
+                            <i class="fas fa-eye text-muted me-2"></i>
+                            <span>1,234 views</span>
+                        </div>
+                        <p class="gallery-description">Layanan konsultasi dengan dokter spesialis berpengalaman</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Section -->
+            <div class="load-more-section text-center" data-aos="fade-up">
+                <button class="load-more-btn text-center" onclick="loadMoreGallery()">
+                    <i class="fas fa-images me-2"></i>Muat Lebih Banyak Foto
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Statistics -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="gallery-stats" data-aos="fade-up">
+                <h3 style="margin-bottom: 1rem;">📊 Statistik Galeri</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <div class="stat-label">Total Foto</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>
+                        <div class="stat-label">Video Dokumenter</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <div class="stat-label">Kegiatan Terdokumentasi</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <div class="stat-label">Kategori Galeri</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Gallery Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Gallery Terbaru</h2>
+            <p class="section-subtitle" data-aos="fade-up">Koleksi foto terbaru dari berbagai kegiatan dan fasilitas</p>
+
+            <div class="masonry-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="masonry-item" data-category="facilities">
+                    <a href="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=800"
+                        data-lightbox="masonry"
+                        data-title="Ruang Tunggu - Area tunggu yang nyaman untuk pasien dan keluarga">
+                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=300&h=400&fit=crop"
+                            alt="Ruang Tunggu" class="masonry-image">
+                    </a>
+                </div>
+
+                <div class="masonry-item" data-category="medical-team">
+                    <a href="https://rspapua.id/assets/img/XdAaAUbN5YI4aOiMWfzxdyPzfHdCZ2S5mrpcWDvk.jpg"
+                        data-lightbox="masonry"
+                        data-title="Dokter Spesialis Anak - Pelayanan pediatri dengan kasih sayang">
+                        <img src="https://rspapua.id/assets/img/XdAaAUbN5YI4aOiMWfzxdyPzfHdCZ2S5mrpcWDvk.jpg"
+                            alt="Dokter Anak" class="masonry-image">
+                    </a>
+                </div>
+
+                <div class="masonry-item" data-category="facilities">
+                    <a href="https://rspapua.id/assets/img/Bf6kDjxyLSkxIfVaI66SafXnwAuiYVHFLNooZygq.jpg"
+                        data-lightbox="masonry" data-title="Ruang Operasi - Fasilitas bedah berstandar internasional">
+                        <img src="https://rspapua.id/assets/img/Bf6kDjxyLSkxIfVaI66SafXnwAuiYVHFLNooZygq.jpg"
+                            alt="Ruang Operasi" class="masonry-image">
+                    </a>
+                </div>
+
+                <div class="masonry-item" data-category="activities">
+                    <a href="https://rspapua.id/assets/img/1Sl2CDCkpmg4wLHlkBp3tT3GEFC2z1oMv9jlx77b.jpg"
+                        data-lightbox="masonry" data-title="Pelatihan Medis - Program pengembangan SDM berkelanjutan">
+                        <img src="https://rspapua.id/assets/img/1Sl2CDCkpmg4wLHlkBp3tT3GEFC2z1oMv9jlx77b.jpg"
+                            alt="Pelatihan" class="masonry-image">
+                    </a>
+                </div>
+
+                <div class="masonry-item" data-category="medical-team">
+                    <a href="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&h=600"
+                        data-lightbox="masonry"
+                        data-title="Tim Bedah - Ahli bedah berpengalaman dengan rekam jejak terbaik">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&h=300&fit=crop"
+                            alt="Tim Bedah" class="masonry-image">
+                    </a>
+                </div>
+
+                <div class="masonry-item" data-category="facilities">
+                    <a href="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=800"
+                        data-lightbox="masonry"
+                        data-title="Kamar Rawat Inap - Kenyamanan seperti di rumah untuk pemulihan optimal">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=400&fit=crop"
+                            alt="Kamar Rawat Inap" class="masonry-image">
+                    </a>
+                </div>
+
+                <div class="masonry-item" data-category="achievements">
+                    <a href="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&h=500"
+                        data-lightbox="masonry"
+                        data-title="Penghargaan Pelayanan - Pengakuan atas dedikasi dalam pelayanan kesehatan">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=300&h=250&fit=crop"
+                            alt="Penghargaan" class="masonry-image">
+                    </a>
+                </div>
+
+                <div class="masonry-item" data-category="activities">
+                    <a href="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=700"
+                        data-lightbox="masonry"
+                        data-title="Pemeriksaan Kesehatan Gratis - Komitmen melayani masyarakat">
+                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=350&fit=crop"
+                            alt="Pemeriksaan Gratis" class="masonry-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding"
+        style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+        <div class="container text-center text-white">
+            <h2 class="section-title text-white" data-aos="fade-up">Ingin Berkunjung Langsung?</h2>
+            <p class="section-subtitle text-white opacity-75" data-aos="fade-up">Lihat sendiri fasilitas modern dan
+                pelayanan terbaik kami</p>
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-4 mb-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-map-marker-alt me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong>Alamat</strong><br>
+                            <span>Jl. Kesehatan No. 123, Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-clock me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong>Jam Kunjungan</strong><br>
+                            <span>08:00 - 20:00 WIB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-phone me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <strong>Informasi</strong><br>
+                            <a href="tel:+622112345678" class="text-white">(021) 1234-5678</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" class="btn btn-light btn-lg me-3 mb-2">
+                    <i class="fas fa-calendar-alt me-2"></i>Jadwalkan Kunjungan
+                </a>
+                <a href="#" class="btn btn-outline-light btn-lg mb-2">
+                    <i class="fas fa-download me-2"></i>Download Brosur
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Gallery Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeInUp 0.5s ease';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Update AOS animations for filtered items
+                setTimeout(() => {
+                    AOS.refresh();
+                }, 100);
+            });
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('gallerySearch');
+
+        searchInput.addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+
+            galleryItems.forEach(item => {
+                const title = item.querySelector('.gallery-title').textContent.toLowerCase();
+                const description = item.querySelector('.gallery-description').textContent.toLowerCase();
+                const category = item.getAttribute('data-category').toLowerCase();
+
+                if (title.includes(searchTerm) || description.includes(searchTerm) || category.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeInUp 0.5s ease';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // If search is empty, show all items
+            if (searchTerm === '') {
+                const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (activeFilter === 'all' || item.getAttribute('data-category') === activeFilter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        });
+
+        // Video Play Functionality
+        function playVideo(videoType) {
+            const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+            const modalTitle = document.getElementById('videoModalTitle');
+            const videoFrame = document.getElementById('videoFrame');
+
+            // Sample video URLs (replace with actual videos)
+            const videos = {
+                'profile': {
+                    url: 'https://www.youtube.com/embed/e16pJnKVduo',
+                    title: 'Profil Rumah Sakit'
+                },
+                'tour': {
+                    url: 'https://www.youtube.com/embed/H_COFqGXHvw',
+                    title: 'Virtual Tour 360°'
+                }
+            };
+
+            if (videos[videoType]) {
+                modalTitle.textContent = videos[videoType].title;
+                videoFrame.src = videos[videoType].url;
+                modal.show();
+            }
+        }
+
+        // Clear video when modal is closed
+        document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+            document.getElementById('videoFrame').src = '';
+        });
+
+        // Load More Gallery Function
+        function loadMoreGallery() {
+            const loadBtn = document.querySelector('.load-more-btn');
+            const originalText = loadBtn.innerHTML;
+
+            // Show loading state
+            loadBtn.innerHTML = '<span class="d-block">Loading...</span>';
+            loadBtn.disabled = true;
+
+            // Simulate loading more images
+            setTimeout(() => {
+                // Add more gallery items (in real app, this would be an AJAX call)
+                const galleryGrid = document.getElementById('galleryGrid');
+
+                // Sample additional items
+                const newItems = [
+                    {
+                        category: 'facilities',
+                        image: 'https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=400&h=250&fit=crop',
+                        largeImage: 'https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&h=600',
+                        title: 'Farmasi Rumah Sakit',
+                        description: 'Apotek lengkap dengan obat-obatan berkualitas tinggi'
+                    },
+                    {
+                        category: 'activities',
+                        image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop',
+                        largeImage: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600',
+                        title: 'Workshop Medis',
+                        description: 'Pelatihan berkelanjutan untuk tenaga medis'
+                    }
+                ];
+
+                newItems.forEach(item => {
+                    const galleryItem = document.createElement('div');
+                    galleryItem.className = 'gallery-item';
+                    galleryItem.setAttribute('data-category', item.category);
+                    galleryItem.innerHTML = `
+                        <div class="gallery-category">${item.category}</div>
+                        <a href="${item.largeImage}" data-lightbox="gallery" data-title="${item.title} - ${item.description}">
+                            <img src="${item.image}" alt="${item.title}" class="gallery-image">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus gallery-overlay-icon"></i>
+                                <div class="gallery-overlay-text">Lihat Detail</div>
+                            </div>
+                        </a>
+                        <div class="gallery-info">
+                            <h4 class="gallery-title">${item.title}</h4>
+                            <p class="gallery-description">${item.description}</p>
+                        </div>
+                    `;
+                    galleryGrid.appendChild(galleryItem);
+                });
+
+                // Reset button
+                loadBtn.innerHTML = originalText;
+                loadBtn.disabled = false;
+
+                // Refresh AOS for new items
+                AOS.refresh();
+
+                // Show success message
+                setTimeout(() => {
+                    loadBtn.innerHTML = '<i class="fas fa-check me-2"></i>Foto Baru Dimuat!';
+                    setTimeout(() => {
+                        loadBtn.innerHTML = originalText;
+                    }, 2000);
+                }, 500);
+
+            }, 2000);
+        }
+
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const increment = target / 50;
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + '+';
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + '+';
+                    }
+                }, 50);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.gallery-stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Lightbox Configuration
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': 'Gambar %1 dari %2',
+            'fadeDuration': 300,
+            'imageFadeDuration': 300
+        });
+
+        // Lazy Loading for Images
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        // Apply lazy loading to images
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation to external links
+        document.querySelectorAll('a[href^="http"], a[href^="mailto:"], a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function () {
+                this.style.opacity = '0.7';
+                this.style.transform = 'scale(0.98)';
+
+                setTimeout(() => {
+                    this.style.opacity = '';
+                    this.style.transform = '';
+                }, 200);
+            });
+        });
+
+        // Keyboard navigation for gallery
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                // Close video modal if open
+                const videoModal = bootstrap.Modal.getInstance(document.getElementById('videoModal'));
+                if (videoModal) {
+                    videoModal.hide();
+                }
+            }
+        });
+
+        // Touch/swipe support for mobile gallery
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', function (e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', function (e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                // Implement swipe navigation if needed
+                console.log(diff > 0 ? 'Swipe left' : 'Swipe right');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/stylekepuasan.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <!-- Dropdown Bahasa -->
+                    <div class="dropdown" id="languageOptions">
+                        <button
+                            class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center gap-1 gap-md-2"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ID</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('ID')">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('EN')">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="survey-hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Kuisioner Kepuasan Pelanggan</h1>
+                <p class="hero-subtitle">Bantu kami meningkatkan kualitas pelayanan dengan memberikan penilaian dan
+                    saran Anda</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5 Menit</span>
+                        <span class="stat-label">Waktu Pengisian</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Tingkat Kepuasan</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Tersedia Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <div class="container">
+        <div class="progress-container">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted">Progress Pengisian</span>
+                <span class="text-muted" id="progressText">0%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Survey Form Section -->
+    <section class="survey-form-section">
+        <div class="container">
+            <div class="form-container" data-aos="fade-up">
+                <div class="form-header">
+                    <h2 class="form-title">Survey Kepuasan Pelanggan</h2>
+                    <p class="form-subtitle">Pendapat Anda sangat berharga untuk meningkatkan kualitas pelayanan kami
+                    </p>
+                </div>
+
+                <form id="surveyForm">
+                    <!-- Step 1: Personal Information -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <h4 class="step-title">Informasi Responden</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Nama Lengkap (Opsional)</label>
+                                    <input type="text" class="form-control" id="fullName"
+                                        placeholder="Masukkan nama lengkap">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Nomor Telepon (Opsional)</label>
+                                    <input type="tel" class="form-control" id="phone"
+                                        placeholder="Contoh: 081234567890">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Usia <span class="required">*</span></label>
+                                    <select class="form-select" id="age" required>
+                                        <option value="">Pilih Kelompok Usia</option>
+                                        <option value="<20">Di bawah 20 tahun</option>
+                                        <option value="20-30">20-30 tahun</option>
+                                        <option value="31-40">31-40 tahun</option>
+                                        <option value="41-50">41-50 tahun</option>
+                                        <option value="51-60">51-60 tahun</option>
+                                        <option value=">60">Di atas 60 tahun</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Jenis Kelamin <span class="required">*</span></label>
+                                    <select class="form-select" id="gender" required>
+                                        <option value="">Pilih Jenis Kelamin</option>
+                                        <option value="pria">Pria</option>
+                                        <option value="wanita">Wanita</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Status Responden <span class="required">*</span></label>
+                                    <select class="form-select" id="status" required>
+                                        <option value="">Pilih Status</option>
+                                        <option value="pasien">Pasien</option>
+                                        <option value="keluarga">Keluarga Pasien</option>
+                                        <option value="pengunjung">Pengunjung</option>
+                                        <option value="lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Tanggal Kunjungan <span class="required">*</span></label>
+                                    <input type="date" class="form-control" id="visitDate" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Service Experience -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <h4 class="step-title">Pengalaman Layanan</h4>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Unit/Ruangan yang Dikunjungi <span
+                                    class="required">*</span></label>
+                            <select class="form-select" id="visitedUnit" required>
+                                <option value="">Pilih Unit/Ruangan</option>
+                                <option value="igd">Instalasi Gawat Darurat (IGD)</option>
+                                <option value="poliklinik">Poliklinik Rawat Jalan</option>
+                                <option value="rawat-inap">Rawat Inap</option>
+                                <option value="laboratorium">Laboratorium</option>
+                                <option value="radiologi">Radiologi</option>
+                                <option value="farmasi">Farmasi</option>
+                                <option value="fisioterapi">Fisioterapi</option>
+                                <option value="hemodialisa">Hemodialisa</option>
+                                <option value="icu">ICU/ICCU</option>
+                                <option value="kamar-operasi">Kamar Operasi</option>
+                                <option value="administrasi">Administrasi</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Jenis Layanan yang Diterima</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="konsultasi"
+                                            value="konsultasi">
+                                        <label class="form-check-label" for="konsultasi">
+                                            Konsultasi Dokter
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="pemeriksaan"
+                                            value="pemeriksaan">
+                                        <label class="form-check-label" for="pemeriksaan">
+                                            Pemeriksaan Medis
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="laboratorium-service"
+                                            value="laboratorium-service">
+                                        <label class="form-check-label" for="laboratorium-service">
+                                            Pemeriksaan Laboratorium
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rawat-inap-service"
+                                            value="rawat-inap-service">
+                                        <label class="form-check-label" for="rawat-inap-service">
+                                            Rawat Inap
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="operasi" value="operasi">
+                                        <label class="form-check-label" for="operasi">
+                                            Operasi/Tindakan
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="radiologi-service"
+                                            value="radiologi-service">
+                                        <label class="form-check-label" for="radiologi-service">
+                                            Pemeriksaan Radiologi
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="farmasi-service"
+                                            value="farmasi-service">
+                                        <label class="form-check-label" for="farmasi-service">
+                                            Pengambilan Obat
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="lainnya-service"
+                                            value="lainnya-service">
+                                        <label class="form-check-label" for="lainnya-service">
+                                            Lainnya
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Satisfaction Ratings -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <h4 class="step-title">Penilaian Kepuasan</h4>
+                        </div>
+
+                        <!-- Overall Satisfaction -->
+                        <div class="rating-container">
+                            <div class="rating-question">Secara keseluruhan, seberapa puas Anda dengan pelayanan RSUP
+                                Jayapura?</div>
+                            <div class="emoji-rating">
+                                <div class="emoji-option">
+                                    <input type="radio" name="overall_satisfaction" value="1" id="overall_1"
+                                        class="emoji-input">
+                                    <label for="overall_1" class="emoji-button">😞</label>
+                                    <div class="emoji-label">Sangat Tidak Puas</div>
+                                </div>
+                                <div class="emoji-option">
+                                    <input type="radio" name="overall_satisfaction" value="2" id="overall_2"
+                                        class="emoji-input">
+                                    <label for="overall_2" class="emoji-button">😐</label>
+                                    <div class="emoji-label">Tidak Puas</div>
+                                </div>
+                                <div class="emoji-option">
+                                    <input type="radio" name="overall_satisfaction" value="3" id="overall_3"
+                                        class="emoji-input">
+                                    <label for="overall_3" class="emoji-button">🙂</label>
+                                    <div class="emoji-label">Cukup Puas</div>
+                                </div>
+                                <div class="emoji-option">
+                                    <input type="radio" name="overall_satisfaction" value="4" id="overall_4"
+                                        class="emoji-input">
+                                    <label for="overall_4" class="emoji-button">😊</label>
+                                    <div class="emoji-label">Puas</div>
+                                </div>
+                                <div class="emoji-option">
+                                    <input type="radio" name="overall_satisfaction" value="5" id="overall_5"
+                                        class="emoji-input">
+                                    <label for="overall_5" class="emoji-button">😍</label>
+                                    <div class="emoji-label">Sangat Puas</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detailed Ratings -->
+                        <div class="rating-container">
+                            <div class="rating-question">Kemudahan Pendaftaran/Administrasi</div>
+                            <div class="rating-scale">
+                                <div class="rating-label">Sangat Sulit</div>
+                                <div class="rating-options">
+                                    <div class="rating-option">
+                                        <input type="radio" name="registration_ease" value="1" id="reg_1"
+                                            class="rating-input">
+                                        <label for="reg_1" class="rating-button">1</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="registration_ease" value="2" id="reg_2"
+                                            class="rating-input">
+                                        <label for="reg_2" class="rating-button">2</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="registration_ease" value="3" id="reg_3"
+                                            class="rating-input">
+                                        <label for="reg_3" class="rating-button">3</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="registration_ease" value="4" id="reg_4"
+                                            class="rating-input">
+                                        <label for="reg_4" class="rating-button">4</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="registration_ease" value="5" id="reg_5"
+                                            class="rating-input">
+                                        <label for="reg_5" class="rating-button">5</label>
+                                    </div>
+                                </div>
+                                <div class="rating-label">Sangat Mudah</div>
+                            </div>
+                        </div>
+
+                        <div class="rating-container">
+                            <div class="rating-question">Waktu Tunggu Pelayanan</div>
+                            <div class="rating-scale">
+                                <div class="rating-label">Sangat Lama</div>
+                                <div class="rating-options">
+                                    <div class="rating-option">
+                                        <input type="radio" name="waiting_time" value="1" id="wait_1"
+                                            class="rating-input">
+                                        <label for="wait_1" class="rating-button">1</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="waiting_time" value="2" id="wait_2"
+                                            class="rating-input">
+                                        <label for="wait_2" class="rating-button">2</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="waiting_time" value="3" id="wait_3"
+                                            class="rating-input">
+                                        <label for="wait_3" class="rating-button">3</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="waiting_time" value="4" id="wait_4"
+                                            class="rating-input">
+                                        <label for="wait_4" class="rating-button">4</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="waiting_time" value="5" id="wait_5"
+                                            class="rating-input">
+                                        <label for="wait_5" class="rating-button">5</label>
+                                    </div>
+                                </div>
+                                <div class="rating-label">Sangat Cepat</div>
+                            </div>
+                        </div>
+
+                        <div class="rating-container">
+                            <div class="rating-question">Keramahan dan Kesopanan Petugas</div>
+                            <div class="rating-scale">
+                                <div class="rating-label">Sangat Buruk</div>
+                                <div class="rating-options">
+                                    <div class="rating-option">
+                                        <input type="radio" name="staff_friendliness" value="1" id="friend_1"
+                                            class="rating-input">
+                                        <label for="friend_1" class="rating-button">1</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="staff_friendliness" value="2" id="friend_2"
+                                            class="rating-input">
+                                        <label for="friend_2" class="rating-button">2</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="staff_friendliness" value="3" id="friend_3"
+                                            class="rating-input">
+                                        <label for="friend_3" class="rating-button">3</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="staff_friendliness" value="4" id="friend_4"
+                                            class="rating-input">
+                                        <label for="friend_4" class="rating-button">4</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="staff_friendliness" value="5" id="friend_5"
+                                            class="rating-input">
+                                        <label for="friend_5" class="rating-button">5</label>
+                                    </div>
+                                </div>
+                                <div class="rating-label">Sangat Baik</div>
+                            </div>
+                        </div>
+
+                        <div class="rating-container">
+                            <div class="rating-question">Kualitas Pelayanan Medis</div>
+                            <div class="rating-scale">
+                                <div class="rating-label">Sangat Buruk</div>
+                                <div class="rating-options">
+                                    <div class="rating-option">
+                                        <input type="radio" name="medical_quality" value="1" id="medical_1"
+                                            class="rating-input">
+                                        <label for="medical_1" class="rating-button">1</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="medical_quality" value="2" id="medical_2"
+                                            class="rating-input">
+                                        <label for="medical_2" class="rating-button">2</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="medical_quality" value="3" id="medical_3"
+                                            class="rating-input">
+                                        <label for="medical_3" class="rating-button">3</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="medical_quality" value="4" id="medical_4"
+                                            class="rating-input">
+                                        <label for="medical_4" class="rating-button">4</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="medical_quality" value="5" id="medical_5"
+                                            class="rating-input">
+                                        <label for="medical_5" class="rating-button">5</label>
+                                    </div>
+                                </div>
+                                <div class="rating-label">Sangat Baik</div>
+                            </div>
+                        </div>
+
+                        <div class="rating-container">
+                            <div class="rating-question">Kebersihan dan Kenyamanan Fasilitas</div>
+                            <div class="rating-scale">
+                                <div class="rating-label">Sangat Buruk</div>
+                                <div class="rating-options">
+                                    <div class="rating-option">
+                                        <input type="radio" name="facility_cleanliness" value="1" id="clean_1"
+                                            class="rating-input">
+                                        <label for="clean_1" class="rating-button">1</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="facility_cleanliness" value="2" id="clean_2"
+                                            class="rating-input">
+                                        <label for="clean_2" class="rating-button">2</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="facility_cleanliness" value="3" id="clean_3"
+                                            class="rating-input">
+                                        <label for="clean_3" class="rating-button">3</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="facility_cleanliness" value="4" id="clean_4"
+                                            class="rating-input">
+                                        <label for="clean_4" class="rating-button">4</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="facility_cleanliness" value="5" id="clean_5"
+                                            class="rating-input">
+                                        <label for="clean_5" class="rating-button">5</label>
+                                    </div>
+                                </div>
+                                <div class="rating-label">Sangat Baik</div>
+                            </div>
+                        </div>
+
+                        <div class="rating-container">
+                            <div class="rating-question">Kejelasan Informasi yang Diberikan</div>
+                            <div class="rating-scale">
+                                <div class="rating-label">Sangat Tidak Jelas</div>
+                                <div class="rating-options">
+                                    <div class="rating-option">
+                                        <input type="radio" name="information_clarity" value="1" id="info_1"
+                                            class="rating-input">
+                                        <label for="info_1" class="rating-button">1</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="information_clarity" value="2" id="info_2"
+                                            class="rating-input">
+                                        <label for="info_2" class="rating-button">2</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="information_clarity" value="3" id="info_3"
+                                            class="rating-input">
+                                        <label for="info_3" class="rating-button">3</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="information_clarity" value="4" id="info_4"
+                                            class="rating-input">
+                                        <label for="info_4" class="rating-button">4</label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" name="information_clarity" value="5" id="info_5"
+                                            class="rating-input">
+                                        <label for="info_5" class="rating-button">5</label>
+                                    </div>
+                                </div>
+                                <div class="rating-label">Sangat Jelas</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Additional Questions -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <div class="step-number">4</div>
+                            <h4 class="step-title">Pertanyaan Tambahan</h4>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Apakah Anda akan merekomendasikan RSUP Jayapura kepada orang
+                                lain?</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommendation" id="rec_yes"
+                                            value="ya">
+                                        <label class="form-check-label" for="rec_yes">
+                                            Ya, pasti akan merekomendasikan
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommendation"
+                                            id="rec_maybe" value="mungkin">
+                                        <label class="form-check-label" for="rec_maybe">
+                                            Mungkin akan merekomendasikan
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommendation" id="rec_no"
+                                            value="tidak">
+                                        <label class="form-check-label" for="rec_no">
+                                            Tidak akan merekomendasikan
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Seberapa sering Anda menggunakan layanan RSUP Jayapura?</label>
+                            <select class="form-select" id="frequency">
+                                <option value="">Pilih Frekuensi</option>
+                                <option value="pertama-kali">Pertama kali</option>
+                                <option value="jarang">Jarang (1-2 kali per tahun)</option>
+                                <option value="kadang">Kadang-kadang (3-6 kali per tahun)</option>
+                                <option value="sering">Sering (lebih dari 6 kali per tahun)</option>
+                                <option value="rutin">Rutin (setiap bulan)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Bagaimana Anda mengetahui tentang RSUP Jayapura?</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rujukan-dokter"
+                                            value="rujukan-dokter">
+                                        <label class="form-check-label" for="rujukan-dokter">
+                                            Rujukan dari dokter
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rekomendasi-keluarga"
+                                            value="rekomendasi-keluarga">
+                                        <label class="form-check-label" for="rekomendasi-keluarga">
+                                            Rekomendasi keluarga/teman
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="internet" value="internet">
+                                        <label class="form-check-label" for="internet">
+                                            Internet/Media Sosial
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="media-massa"
+                                            value="media-massa">
+                                        <label class="form-check-label" for="media-massa">
+                                            Media massa (TV/Radio/Koran)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="lokasi-strategis"
+                                            value="lokasi-strategis">
+                                        <label class="form-check-label" for="lokasi-strategis">
+                                            Lokasi yang strategis
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="lainnya-info"
+                                            value="lainnya-info">
+                                        <label class="form-check-label" for="lainnya-info">
+                                            Lainnya
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Feedback -->
+                    <div class="form-step">
+                        <div class="step-header">
+                            <div class="step-number">5</div>
+                            <h4 class="step-title">Saran dan Masukan</h4>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Hal yang paling Anda sukai dari layanan RSUP Jayapura</label>
+                            <textarea class="form-control" id="positiveNotes" rows="4"
+                                placeholder="Ceritakan pengalaman positif Anda..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Hal yang perlu diperbaiki dari layanan RSUP Jayapura</label>
+                            <textarea class="form-control" id="improvements" rows="4"
+                                placeholder="Berikan saran untuk perbaikan layanan..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Saran dan masukan lainnya</label>
+                            <textarea class="form-control" id="additionalFeedback" rows="4"
+                                placeholder="Masukan tambahan yang ingin Anda sampaikan..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Section -->
+                    <div class="submit-section">
+                        <h4>Konfirmasi Pengiriman</h4>
+                        <p class="text-muted mb-4">Terima kasih telah meluangkan waktu untuk mengisi kuisioner ini.
+                            Masukan Anda sangat berharga untuk meningkatkan kualitas pelayanan kami.</p>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreementCheck" required>
+                            <label class="form-check-label" for="agreementCheck">
+                                Saya menyetujui bahwa data yang diberikan dapat digunakan untuk keperluan evaluasi dan
+                                peningkatan kualitas layanan
+                            </label>
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <button type="button" class="draft-btn" id="saveDraftBtn">
+                                <i class="fas fa-save me-2"></i>Simpan Draft
+                            </button>
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                <i class="fas fa-paper-plane me-2"></i>Kirim Survey
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2>Hubungi Kami</h2>
+                    <p>Tim Customer Service kami siap membantu Anda</p>
+                </div>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4 class="contact-title">Telepon</h4>
+                    <div class="contact-info">(0967) 533118<br>Senin - Jumat, 08:00-16:00</div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 class="contact-title">Email</h4>
+                    <div class="contact-info">info@rsupjayapura.go.id<br>Respon dalam 24 jam</div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4 class="contact-title">Alamat</h4>
+                    <div class="contact-info">Jl. Kesehatan No. 1<br>Jayapura Utara, Papua</div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="contact-title">Jam Operasional</h4>
+                    <div class="contact-info">24 Jam<br>Setiap Hari</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-4">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h4 class="mb-3">Survey Berhasil Dikirim!</h4>
+                    <p class="text-muted mb-4">Terima kasih atas partisipasi Anda. Masukan Anda sangat berharga untuk
+                        meningkatkan kualitas pelayanan RSUP Jayapura.</p>
+                    <div class="alert alert-info" role="alert">
+                        <strong>Nomor Referensi: </strong>
+                        <span id="referenceNumber">SRV-2024-001234</span>
+                    </div>
+                    <p class="small text-muted">Simpan nomor referensi ini sebagai bukti pengisian survey</p>
+                    <div class="d-flex gap-2 justify-content-center mt-4">
+                        <button type="button" class="btn btn-primary" onclick="copyReferenceNumber()">
+                            <i class="fas fa-copy me-1"></i>Salin Nomor
+                        </button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                            <i class="fas fa-check me-1"></i>Selesai
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Progress tracking
+        function updateProgress() {
+            const form = document.getElementById('surveyForm');
+            const totalInputs = form.querySelectorAll('input[required], select[required], textarea[required], input[type="radio"], input[type="checkbox"]').length;
+            const filledInputs = form.querySelectorAll('input[required]:valid, select[required]:valid, textarea[required]:valid, input[type="radio"]:checked, input[type="checkbox"]:checked').length;
+
+            const progress = Math.round((filledInputs / totalInputs) * 100);
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+
+            progressBar.style.width = progress + '%';
+            progressText.textContent = progress + '%';
+        }
+
+        // Add event listeners to form inputs for progress tracking
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputs = document.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('change', updateProgress);
+                input.addEventListener('input', updateProgress);
+            });
+
+            // Initial progress update
+            updateProgress();
+        });
+
+        // Form submission
+        document.getElementById('surveyForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (!document.getElementById('agreementCheck').checked) {
+                alert('Mohon centang persetujuan terlebih dahulu');
+                return;
+            }
+
+            // Show loading state
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Mengirim...';
+            submitBtn.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                // Generate reference number
+                const referenceNumber = 'SRV-' + new Date().getFullYear() + '-' + Math.random().toString(36).substr(2, 6).toUpperCase();
+                document.getElementById('referenceNumber').textContent = referenceNumber;
+
+                // Show success modal
+                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                successModal.show();
+
+                // Reset form
+                this.reset();
+                updateProgress();
+
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Save draft functionality
+        document.getElementById('saveDraftBtn').addEventListener('click', function () {
+            const formData = new FormData(document.getElementById('surveyForm'));
+            // Here you would typically save to localStorage or send to server
+
+            // Save to localStorage for demo
+            const draftData = {};
+            for (let [key, value] of formData.entries()) {
+                draftData[key] = value;
+            }
+            localStorage.setItem('rsupSurveyDraft', JSON.stringify(draftData));
+
+            // Show confirmation
+            const btn = this;
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check me-2"></i>Tersimpan!';
+            btn.classList.remove('draft-btn');
+            btn.classList.add('btn', 'btn-success');
+
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.classList.remove('btn', 'btn-success');
+                btn.classList.add('draft-btn');
+            }, 2000);
+        });
+
+        // Load draft on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedDraft = localStorage.getItem('rsupSurveyDraft');
+            if (savedDraft) {
+                const draftData = JSON.parse(savedDraft);
+
+                // Show notification about saved draft
+                const notification = document.createElement('div');
+                notification.className = 'alert alert-info alert-dismissible fade show';
+                notification.innerHTML = `
+                    <i class="fas fa-info-circle me-2"></i>
+                    Data draft ditemukan. Apakah Anda ingin melanjutkan pengisian sebelumnya?
+                    <button type="button" class="btn btn-sm btn-outline-primary ms-2" onclick="loadDraft()">
+                        <i class="fas fa-upload me-1"></i>Muat Draft
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ms-1" onclick="clearDraft()">
+                        <i class="fas fa-trash me-1"></i>Hapus Draft
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+
+                const container = document.querySelector('.container');
+                container.insertBefore(notification, container.firstChild);
+            }
+        });
+
+        // Load draft function
+        function loadDraft() {
+            const savedDraft = localStorage.getItem('rsupSurveyDraft');
+            if (savedDraft) {
+                const draftData = JSON.parse(savedDraft);
+
+                // Fill form fields
+                Object.keys(draftData).forEach(key => {
+                    const input = document.querySelector(`[name="${key}"]`);
+                    if (input) {
+                        if (input.type === 'radio' || input.type === 'checkbox') {
+                            const specificInput = document.querySelector(`[name="${key}"][value="${draftData[key]}"]`);
+                            if (specificInput) {
+                                specificInput.checked = true;
+                            }
+                        } else {
+                            input.value = draftData[key];
+                        }
+                    }
+                });
+
+                updateProgress();
+                document.querySelector('.alert').remove();
+            }
+        }
+
+        // Clear draft function
+        function clearDraft() {
+            localStorage.removeItem('rsupSurveyDraft');
+            document.querySelector('.alert').remove();
+        }
+
+        // Copy reference number
+        function copyReferenceNumber() {
+            const referenceNumber = document.getElementById('referenceNumber').textContent;
+            navigator.clipboard.writeText(referenceNumber).then(() => {
+                const btn = event.target.closest('button');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check me-1"></i>Tersalin!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            });
+        }
+
+        // Form validation enhancements
+        document.querySelectorAll('.form-control, .form-select').forEach(input => {
+            input.addEventListener('blur', function () {
+                if (this.hasAttribute('required') && !this.value.trim()) {
+                    this.classList.add('is-invalid');
+                } else {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                }
+            });
+
+            input.addEventListener('input', function () {
+                if (this.classList.contains('is-invalid') && this.value.trim()) {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                }
+            });
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.startsWith('0')) {
+                // Keep Indonesian format
+                value = value;
+            }
+            e.target.value = value;
+        });
+
+        // Auto-resize textarea
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.addEventListener('input', function () {
+                this.style.height = 'auto';
+                this.style.height = this.scrollHeight + 'px';
+            });
+        });
+
+        // Set default visit date to today
+        document.addEventListener('DOMContentLoaded', function () {
+            const visitDateInput = document.getElementById('visitDate');
+            const today = new Date().toISOString().split('T')[0];
+            visitDateInput.value = today;
+            visitDateInput.max = today; // Prevent future dates
+        });
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Rating interaction feedback
+        document.querySelectorAll('.rating-button, .emoji-button').forEach(button => {
+            button.addEventListener('click', function () {
+                // Add click animation
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+
+        // Show/hide additional fields based on selections
+        document.getElementById('lainnya-service').addEventListener('change', function () {
+            if (this.checked) {
+                if (!document.getElementById('otherServiceInput')) {
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.className = 'form-control mt-2';
+                    input.id = 'otherServiceInput';
+                    input.placeholder = 'Sebutkan layanan lainnya...';
+                    this.closest('.form-check').appendChild(input);
+                }
+            } else {
+                const otherInput = document.getElementById('otherServiceInput');
+                if (otherInput) {
+                    otherInput.remove();
+                }
+            }
+        });
+
+        document.getElementById('lainnya-info').addEventListener('change', function () {
+            if (this.checked) {
+                if (!document.getElementById('otherInfoInput')) {
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.className = 'form-control mt-2';
+                    input.id = 'otherInfoInput';
+                    input.placeholder = 'Sebutkan sumber informasi lainnya...';
+                    this.closest('.form-check').appendChild(input);
+                }
+            } else {
+                const otherInput = document.getElementById('otherInfoInput');
+                if (otherInput) {
+                    otherInput.remove();
+                }
+            }
+        });
+
+        // Initialize tooltips if Bootstrap tooltip is available
+        if (typeof bootstrap !== 'undefined' && bootstrap.Tooltip) {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        }
+
+        // Add keyboard navigation for rating scales
+        document.querySelectorAll('.rating-button, .emoji-button').forEach((button, index, buttons) => {
+            button.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowLeft' && index > 0) {
+                    buttons[index - 1].focus();
+                } else if (e.key === 'ArrowRight' && index < buttons.length - 1) {
+                    buttons[index + 1].focus();
+                } else if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+
+        // Add focus management for better accessibility
+        document.querySelectorAll('input, select, textarea, button').forEach(element => {
+            element.addEventListener('focus', function () {
+                this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+
+        // Performance optimization: Debounce progress updates
+        let progressUpdateTimeout;
+        function debouncedUpdateProgress() {
+            clearTimeout(progressUpdateTimeout);
+            progressUpdateTimeout = setTimeout(updateProgress, 300);
+        }
+
+        // Replace immediate progress updates with debounced version for better performance
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputs = document.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('change', debouncedUpdateProgress);
+                input.addEventListener('input', debouncedUpdateProgress);
+            });
+        });
+
+        // Add print functionality for completed survey
+        function printSurvey() {
+            window.print();
+        }
+
+        // Add survey completion analytics (placeholder)
+        function trackSurveyCompletion() {
+            // This would typically send analytics data to your tracking service
+            console.log('Survey completed at:', new Date().toISOString());
+        }
+
+        // Call tracking when survey is submitted
+        document.getElementById('surveyForm').addEventListener('submit', function () {
+            trackSurveyCompletion();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styleberitadetail.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <!-- Dropdown Bahasa -->
+                    <div class="dropdown" id="languageOptions">
+                        <button
+                            class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center gap-1 gap-md-2"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ID</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('ID')">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('EN')">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">informasi/a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Reading Progress Bar -->
+        <div class="reading-progress" id="reading-progress"></div>
+    </nav>
+
+
+    <section id="" class="py-4 py-md-5 loading">
+        <div class="container py-4">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Berita</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Detail Berita</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Article Header -->
+                    <div class="mb-4">
+                        <h1 class="display-5 fw-bold mb-3">Terobosan Baru dalam Pengobatan Penyakit Jantung dengan
+                            Teknologi AI</h1>
+
+                        <!-- Article Meta -->
+                        <div class="article-meta p-3 mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <img src="assets/images/amos.png" alt="Author" class="rounded-circle me-2">
+                                        <div>
+                                            <small class="text-muted">Ditulis oleh</small>
+                                            <div class="fw-semibold">Dr. Sarah Wijaya</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center justify-content-md-end">
+                                        <i class="fas fa-calendar-alt text-muted me-2"></i>
+                                        <span class="me-3">25 Juli 2025</span>
+                                        <i class="fas fa-clock text-muted me-2"></i>
+                                        <span class="me-3">5 min baca</span>
+                                        <i class="fas fa-eye text-muted me-2"></i>
+                                        <span>1,234 views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="tags mb-4">
+                            <span class="badge bg-primary">Teknologi Medis</span>
+                            <span class="badge bg-success">Jantung</span>
+                            <span class="badge bg-info">AI</span>
+                            <span class="badge bg-warning text-dark">Inovasi</span>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <img src="assets/images/berita.jpg" alt="Teknologi AI dalam Pengobatan Jantung"
+                        class="img-fluid hero-image thumbnail">
+                    <div class="thumbnail-caption">
+                        <p>Foto: Ini adalah caption dari gambar thumbnail</p>
+                    </div>
+                    <!-- Article Content -->
+                    <div class="article-content">
+                        <p class="lead">
+                            Dunia medis kembali mencatat terobosan penting dengan dikembangkannya sistem kecerdasan
+                            buatan (AI) yang mampu mendiagnosis penyakit jantung dengan tingkat akurasi mencapai 98%.
+                            Teknologi revolusioner ini diharapkan dapat mengubah cara dokter menangani pasien dengan
+                            masalah kardiovaskular.
+                        </p>
+
+                        <p>
+                            Tim peneliti dari berbagai rumah sakit terkemuka telah berkolaborasi selama tiga tahun untuk
+                            mengembangkan sistem AI ini. Dengan menganalisis lebih dari 100,000 data rekam medis dan
+                            hasil pemeriksaan jantung, sistem ini mampu mengidentifikasi pola-pola yang sulit dideteksi
+                            oleh mata manusia.
+                        </p>
+
+                        <h3><i class="fas fa-lightbulb text-warning me-2"></i>Bagaimana Teknologi AI Bekerja?</h3>
+
+                        <p>
+                            Sistem AI ini menggunakan kombinasi machine learning dan deep learning untuk menganalisis
+                            berbagai data medis, termasuk:
+                        </p>
+
+                        <ul class="mb-4">
+                            <li>Hasil elektrokardiogram (EKG)</li>
+                            <li>Gambar ekokardiografi</li>
+                            <li>Data tekanan darah historis</li>
+                            <li>Riwayat medis pasien</li>
+                            <li>Faktor risiko genetik</li>
+                        </ul>
+
+                        <div class="quote-highlight">
+                            Teknologi AI ini bukan untuk menggantikan dokter, tetapi untuk membantu mereka membuat
+                            diagnosis yang lebih akurat dan cepat. Ini adalah contoh sempurna bagaimana teknologi dapat
+                            meningkatkan kualitas pelayanan kesehatan.
+                            <div class="mt-2">
+                                <small>- Prof. Dr. Ahmad Rahman, Kepala Divisi Kardiologi RS Nasional</small>
+                            </div>
+                        </div>
+
+                        <h3><i class="fas fa-chart-line text-success me-2"></i>Dampak Positif bagi Pasien</h3>
+
+                        <p>
+                            Implementasi teknologi AI dalam diagnosis penyakit jantung memberikan berbagai keuntungan
+                            signifikan:
+                        </p>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-tachometer-alt fa-2x text-primary mb-3"></i>
+                                        <h5>Diagnosis Lebih Cepat</h5>
+                                        <p class="small">Waktu diagnosis berkurang dari 2-3 hari menjadi hanya 30 menit
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-bullseye fa-2x text-success mb-3"></i>
+                                        <h5>Akurasi Tinggi</h5>
+                                        <p class="small">Tingkat akurasi diagnosis mencapai 98%, mengurangi risiko
+                                            misdiagnosis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            Dr. Maria Sari, salah satu dokter yang terlibat dalam uji coba sistem ini, menjelaskan bahwa
+                            teknologi AI membantu mengidentifikasi kasus-kasus yang mungkin terlewat dalam pemeriksaan
+                            konvensional. "Kami menemukan beberapa kasus penyakit jantung stadium awal yang tidak
+                            terdeteksi sebelumnya," ujarnya.
+                        </p>
+
+                        <h3><i class="fas fa-road text-info me-2"></i>Masa Depan Pengobatan Jantung</h3>
+
+                        <p>
+                            Keberhasilan implementasi AI dalam diagnosis penyakit jantung membuka jalan bagi
+                            pengembangan teknologi serupa untuk penyakit lainnya. Rumah sakit-rumah sakit di Indonesia
+                            direncanakan akan mulai mengadopsi teknologi ini secara bertahap mulai tahun 2026.
+                        </p>
+
+                        <p>
+                            Dengan dukungan pemerintah dan investasi dari sektor swasta, diharapkan teknologi AI dalam
+                            bidang kesehatan dapat menjangkau seluruh lapisan masyarakat, tidak hanya di kota-kota besar
+                            tetapi juga daerah terpencil melalui sistem telemedicine.
+                        </p>
+                    </div>
+                    <div class="reference">
+
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Referensi
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body rounded-none">
+                                <p class="mb-0">
+                                    Selman, et al. (2022). Maximizing Recovery in the Postpartum Period: A Timeline for
+                                    Rehabilitation from Pregnancy Through Return to Sport. International Journal of
+                                    Sports
+                                    Physical Therapy, 17(6), pp. 170.
+                                </p>
+                                <p class="mb-0">
+                                    National Health Service UK (2024). Your Body after the Birth.
+                                </p>
+                                <p class="mb-0">
+                                    Cleveland Clinic (2022). Episiotomy.
+                                </p>
+                                <p class="mb-0">
+                                    Mayo Clinic (2023). Labor and Delivery, Postpartum Care.
+                                </p>
+                                <p class="mb-0">
+                                    Hersh, E. Healthline. What You Need to Know About Natural Birth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Share Buttons -->
+                    <div class="share-buttons text-center my-5">
+                        <h5 class="mb-3">Bagikan Artikel Ini</h5>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-facebook-f me-2"></i>Facebook</a>
+                        <a href="#" class="btn btn-info"><i class="fab fa-twitter me-2"></i>Twitter</a>
+                        <a href="#" class="btn btn-success"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+                        <a href="#" class="btn btn-danger"><i class="fab fa-pinterest me-2"></i>Pinterest</a>
+                        <a href="#" class="btn btn-secondary"><i class="fas fa-link me-2"></i>Copy Link</a>
+                    </div>
+
+                    <!-- Author Bio -->
+                    <div class="author-card p-4 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <img src="assets/images/amos.png" alt="Dr. Sarah Wijaya" class="author-avatar">
+                            </div>
+                            <div class="col">
+                                <h5 class="mb-1">Dr. Sarah Wijaya</h5>
+                                <p class="text-muted mb-2">Spesialis Kardiologi, RS Pusat Jakarta</p>
+                                <p class="small mb-0">Dr. Sarah adalah seorang ahli jantung dengan pengalaman lebih dari
+                                    15 tahun. Beliau aktif dalam penelitian teknologi medis dan telah menerbitkan lebih
+                                    dari 50 jurnal ilmiah internasional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="sticky-sidebar">
+                        <!-- Related Articles -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-header bg-white border-0">
+                                <h5 class="mb-0"><i class="fas fa-newspaper text-primary me-2"></i>Berita Terkait</h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <!-- Related Article 1 -->
+                                <div class="related-article">
+                                    <img src="assets/images/ginjal.jpg" alt="Telemedicine" class="img-fluid">
+                                    <div class="p-3">
+                                        <h6><a href="#" class="text-decoration-none text-dark">Perkembangan Telemedicine
+                                                di
+                                                Indonesia Pasca Pandemi</a></h6>
+                                        <p class="small text-muted mb-2">Sistem konsultasi online semakin berkembang dan
+                                            memberikan kemudahan akses kesehatan...</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-calendar-alt me-1"></i>20 Juli 2025
+                                        </small>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+
+                                <!-- Related Article 2 -->
+                                <div class="related-article">
+                                    <img src="assets/images/img_image_1.png" alt="Penelitian Medis" class="img-fluid">
+                                    <div class="p-3">
+                                        <h6><a href="#" class="text-decoration-none text-dark">Penelitian Terbaru:
+                                                Terapi
+                                                Gen untuk Penyakit Langka</a></h6>
+                                        <p class="small text-muted mb-2">Para ilmuwan berhasil mengembangkan terapi gen
+                                            yang
+                                            menjanjikan untuk penyakit langka...</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-calendar-alt me-1"></i>18 Juli 2025
+                                        </small>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+
+                                <!-- Related Article 3 -->
+                                <div class="related-article">
+                                    <img src="assets/images/img_image_234x422.png" alt="Alat Medis" class="img-fluid">
+                                    <div class="p-3">
+                                        <h6><a href="#" class="text-decoration-none text-dark">Inovasi Alat Medis
+                                                Portable
+                                                untuk Daerah Terpencil</a></h6>
+                                        <p class="small text-muted mb-2">Pengembangan alat medis portable membawa
+                                            harapan
+                                            baru untuk pelayanan kesehatan...</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-calendar-alt me-1"></i>15 Juli 2025
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter Signup -->
+                        <div class="card border-0 shadow-sm mb-4"
+                            style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                            <div class="card-body text-white">
+                                <h5 class="text-white mb-3"><i class="fas fa-envelope me-2"></i>Newsletter</h5>
+                                <p class="small mb-3">Dapatkan berita kesehatan terbaru langsung di inbox Anda!</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Anda"
+                                            style="border-radius: 25px;">
+                                    </div>
+                                    <button type="submit" class="btn btn-light w-100" style="border-radius: 25px;">
+                                        <i class="fas fa-paper-plane me-2"></i>Berlangganan
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Popular Tags -->
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-white border-0">
+                                <h5 class="mb-0"><i class="fas fa-tags text-primary me-2"></i>Tag Populer</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="tags">
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Teknologi
+                                        Medis</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Jantung</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">AI</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Telemedicine</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Inovasi</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Penelitian</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Kesehatan
+                                        Digital</a>
+                                    <a href="#" class="badge bg-light text-dark text-decoration-none">Diagnosis</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Button group in btn-group-custom
+            const btnGroupButtonsSpesialis = document.querySelectorAll('#spesialis .btn');
+            btnGroupButtonsSpesialis.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsSpesialis.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            const btnGroupButtonsHari = document.querySelectorAll('#hari .btn');
+            btnGroupButtonsHari.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsHari.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Reading Progress Bar
+            window.addEventListener('scroll', function () {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = (scrollTop / scrollHeight) * 100;
+                document.getElementById('reading-progress').style.width = progress + '%';
+            });
+
+            // Share functionality (basic)
+            document.querySelectorAll('.share-buttons .btn').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    // Add your share logic here
+                    console.log('Sharing via:', this.textContent.trim());
+                });
+            });
+
+            // Newsletter form
+            document.querySelector('form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Terima kasih! Anda telah berlangganan newsletter kami.');
+            });
+        })
+    </script>
+</body>
+
+</html>

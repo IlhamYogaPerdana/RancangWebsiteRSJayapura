@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styledokterkami.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <!-- Dropdown Bahasa -->
+                    <div class="dropdown" id="languageOptions">
+                        <button
+                            class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center gap-1 gap-md-2"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ID</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('ID')">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('EN')">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="dokter-kami" class="hero-section loading">
+        <div class="container">
+            <div class="row justify-content-center justify-content-lg-start">
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+                    <h1 class="hero-title">Dokter Kami</h1>
+                    <p class="hero-subtitle">Dokter yang handal siap melanyani anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="" class="loading">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 py-5">
+                    <div class="filter-section" data-aos="fade-right">
+                        <div class="filter-card">
+                            <h3 class="filter-title">Filter</h3>
+                            <div class="filter-group">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Masukan nama dokter">
+                                </div>
+                            </div>
+                            <!-- Divider dengan text "atau" -->
+                            <div class="divider-container">
+                                <div class="divider-line"></div>
+                                <span class="divider-text">atau</span>
+                            </div>
+                            <!-- Spesialis Filter -->
+                            <div class="filter-group">
+                                <label class="filter-label">Spesialis</label>
+                                <select class="form-select">
+                                    <option selected>Pilih Spesialis</option>
+                                    <option value="child">Penyakit Dalam</option>
+                                    <option value="adult">Obgyn</option>
+                                    <option value="elderly">Kulit dan Kelamin</option>
+                                </select>
+                            </div>
+
+                            <!-- Hari Filter -->
+                            <div class="filter-group">
+                                <label class="filter-label">Hari</label>
+                                <select class="form-select">
+                                    <option selected>Pilih Hari</option>
+                                    <option value="senin">Senin</option>
+                                    <option value="selasa">Selasa</option>
+                                    <option value="rabu">Rabu</option>
+                                    <option value="kamis">Kamis</option>
+                                    <option value="jumat">Jumat</option>
+                                </select>
+                            </div>
+
+                            <!-- Price Range Filter -->
+                            <!-- <div class="filter-group">
+                                <label class="filter-label">Hari</label>
+                                <select class="form-select">
+                                    <option selected>Semua Harga</option>
+                                    <option value="0-500000">Di bawah Rp500.000</option>
+                                    <option value="500000-1000000">Rp500.000 - Rp1.000.000</option>
+                                    <option value="1000000-2000000">Rp1.000.000 - Rp2.000.000</option>
+                                    <option value="2000000+">Di atas Rp2.000.000</option>
+                                </select>
+                            </div> -->
+
+                            <button class="reset-btn mt-3">Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <!-- Stats Section -->
+                    <div class="stats-section my-5 mb-3" data-aos="fade-up">
+                        <h3 class="stats-title">Tim Dokter RSUP Jayapura</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="stat-number">152</div>
+                                <div class="stat-label">Total Dokter</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <div class="stat-number">25</div>
+                                <div class="stat-label">Spesialisasi</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Layanan Darurat</div>
+                            </div>
+                            <!-- <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-number">4.8</div>
+                                <div class="stat-label">Rating Rata-rata</div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Doctor Card 1 -->
+                            <div class="doctor-card">
+                                <div class="doctor-header pb-0">
+                                    <div class="doctor-status">TERSEDIA</div>
+                                    <div class="doctor-avatar">
+                                        <img src="assets/images/amos.png" class="img-circle" alt="">
+                                    </div>
+                                    <div class="doctor-name">dr. Ahmad Fadli, Sp.PD</div>
+                                    <div class="doctor-specialty">Spesialis Penyakit Dalam</div>
+                                    <div class="doctor-experience">12 tahun pengalaman</div>
+                                    <div class="doctor-info">
+                                        <div class="info-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Poliklinik Anak</span>
+                                        </div>
+                                        <div class="info-item rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>4.8 (89 ulasan)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor-schedule">
+                                    <div class="schedule-title">Jadwal Praktik :</div>
+                                    <div class="schedule-times">
+                                        <div class="d-block">
+                                            <span class="time-slot">Senin</span>
+                                            <span class="time-slot">15:00-17:00</span>
+                                            <span class="time-slot">15:00-17:00</span>
+                                        </div>
+                                        <div class="d-block">
+                                            <span class="time-slot">Kamis, 15:00-17:00</span>
+                                            <!-- <span class="time-slot">15:00-17:00</span> -->
+                                            <!-- <span class="time-slot"></span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn-outline-primary">Lihat Profil</button>
+                                    <button class="btn-primary">Buat Janji</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Doctor Card 3 -->
+                            <div class="doctor-card">
+                                <div class="doctor-header">
+                                    <div class="doctor-status offline">TIDAK TERSEDIA</div>
+                                    <div class="doctor-avatar">
+                                        <i class="fas fa-user-md"></i>
+                                    </div>
+                                    <div class="doctor-name">dr. Michael Tanggua, Sp.B</div>
+                                    <div class="doctor-specialty">Spesialis Bedah Umum</div>
+                                    <div class="doctor-experience">15 tahun pengalaman</div>
+                                    <div class="doctor-info">
+                                        <div class="info-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Poliklinik Bedah</span>
+                                        </div>
+                                        <div class="info-item rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>4.9 (156 ulasan)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor-schedule">
+                                    <div class="schedule-title">Jadwal Praktik Besok:</div>
+                                    <div class="schedule-times">
+                                        <span class="time-slot">07:00-11:00</span>
+                                        <span class="time-slot">13:00-15:00</span>
+                                    </div>
+                                </div>
+                                <div class="doctor-actions">
+                                    <button class="btn-outline-primary">Lihat Profil</button>
+                                    <button class="btn-primary">Buat Janji</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col py-5">
+                            <!-- Pagination -->
+                            <nav aria-label="Doctor pagination">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link paging-btn" href="#" tabindex="-1"
+                                            aria-disabled="true">Sebelumnya</a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link paging-btn paging-btn-active" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link paging-btn" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link paging-btn" href="#">Selanjutnya</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Button group in btn-group-custom
+            const btnGroupButtonsSpesialis = document.querySelectorAll('#spesialis .btn');
+            btnGroupButtonsSpesialis.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsSpesialis.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            const btnGroupButtonsHari = document.querySelectorAll('#hari .btn');
+            btnGroupButtonsHari.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsHari.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        })
+    </script>
+</body>
+
+</html>

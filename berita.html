@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styleberita.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <!-- Dropdown Bahasa -->
+                    <div class="dropdown" id="languageOptions">
+                        <button
+                            class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center gap-1 gap-md-2"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ID</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('ID')">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('EN')">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="dokter-kami" class="hero-section loading">
+        <div class="container">
+            <div class="row justify-content-center justify-content-lg-start">
+                <div class="col-12 text-center text-lg-center">
+                    <h1 class="hero-title">Berita</h1>
+                    <p class="hero-subtitle">Sumber informasi terpercaya tentang pelayanan, edukasi, dan kegiatan RSUP
+                        Jayapura
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="" class="py-4 py-md-5 loading">
+        <div class="container">
+            <div class="row g-3 g-md-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_276x422.png" width="400" height="200"
+                                alt="Virus dan Pandemi">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title mb-1" title="Mewabah di China, Akankah Virus HMPV Picu Pandemi seperti
+                                Covid-19? Ini Kata Pakar">Mewabah di China, Akankah Virus HMPV Picu Pandemi seperti
+                                Covid-19? Ini Kata Pakar</h3>
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="fas fa-calendar-alt text-muted me-2"></i>
+                                <span class="me-3">25 Juli 2025</span>
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="me-3">5 min baca</span>
+                                <i class="fas fa-eye text-muted me-2"></i>
+                                <span>1,234 views</span>
+                            </div>
+                            <p class="article-excerpt">Kasus penyakit yang disebabkan Human Metapneumovirus (HMPV)
+                                meningkat di <u>China</u>, tepat lima tahun setelah munculnya pandemi <u>Covid</u>-19.
+                            </p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_1.png" width="400" height="200" alt="Virus dan Pandemi"
+                                alt="Kesehatan Ibu dan Anak">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title mb-1"
+                                title="Tips Menjaga Kesehatan Ibu Hamil dan Janin Selama Masa Kehamilan Untuk Kesehatan Janin">
+                                Tips Menjaga Kesehatan Ibu Hamil dan Janin Selama Masa
+                                Kehamilan Untuk Kesehatan Janin
+                            </h3>
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="fas fa-calendar-alt text-muted me-2"></i>
+                                <span class="me-3">25 Juli 2025</span>
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="me-3">5 min baca</span>
+                                <i class="fas fa-eye text-muted me-2"></i>
+                                <span>1,234 views</span>
+                            </div>
+                            <p class="article-excerpt">Panduan lengkap untuk ibu hamil dalam menjaga kesehatan selama
+                                masa kehamilan dengan nutrisi yang tepat dan pemeriksaan rutin agar sehat dab bugar
+                                selalu.</p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_5.png" width="400" height="200" alt="Virus dan Pandemi"
+                                alt="Kesehatan Ibu dan Anak">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title mb-1">Manfaat Olahraga Teratur untuk Kesehatan Jantung dan Pembuluh
+                                Darah</h3>
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="fas fa-calendar-alt text-muted me-2"></i>
+                                <span class="me-3">25 Juli 2025</span>
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="me-3">5 min baca</span>
+                                <i class="fas fa-eye text-muted me-2"></i>
+                                <span>1,234 views</span>
+                            </div>
+                            <p class="article-excerpt">Pelajari bagaimana olahraga rutin dapat meningkatkan kesehatan
+                                kardiovaskular dan mencegah penyakit jantung.</p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_276x422.png" width="400" height="200"
+                                alt="Virus dan Pandemi">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title mb-1">Mewabah di China, Akankah Virus HMPV Picu Pandemi seperti
+                                Covid-19? Ini Kata Pakar</h3>
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="fas fa-calendar-alt text-muted me-2"></i>
+                                <span class="me-3">25 Juli 2025</span>
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="me-3">5 min baca</span>
+                                <i class="fas fa-eye text-muted me-2"></i>
+                                <span>1,234 views</span>
+                            </div>
+                            <p class="article-excerpt">Kasus penyakit yang disebabkan Human Metapneumovirus (HMPV)
+                                meningkat di <u>China</u>, tepat lima tahun setelah munculnya pandemi <u>Covid</u>-19.
+                            </p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_1.png" width="400" height="200" alt="Virus dan Pandemi"
+                                alt="Kesehatan Ibu dan Anak">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title mb-1">Tips Menjaga Kesehatan Ibu Hamil dan Janin Selama Masa
+                                Kehamilan
+                            </h3>
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="fas fa-calendar-alt text-muted me-2"></i>
+                                <span class="me-3">25 Juli 2025</span>
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="me-3">5 min baca</span>
+                                <i class="fas fa-eye text-muted me-2"></i>
+                                <span>1,234 views</span>
+                            </div>
+                            <p class="article-excerpt">Panduan lengkap untuk ibu hamil dalam menjaga kesehatan selama
+                                masa kehamilan dengan nutrisi yang tepat dan pemeriksaan rutin.</p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="article-card h-100" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/images/img_image_5.png" width="400" height="200" alt="Virus dan Pandemi"
+                                alt="Kesehatan Ibu dan Anak">
+                        </div>
+                        <div class="card-body p-3 p-md-4">
+                            <h3 class="article-title mb-1">Manfaat Olahraga Teratur untuk Kesehatan Jantung dan Pembuluh
+                                Darah</h3>
+                            <div class="d-flex align-items-center mb-1">
+                                <i class="fas fa-calendar-alt text-muted me-2"></i>
+                                <span class="me-3">25 Juli 2025</span>
+                                <i class="fas fa-clock text-muted me-2"></i>
+                                <span class="me-3">5 min baca</span>
+                                <i class="fas fa-eye text-muted me-2"></i>
+                                <span>1,234 views</span>
+                            </div>
+                            <p class="article-excerpt">Pelajari bagaimana olahraga rutin dapat meningkatkan kesehatan
+                                kardiovaskular dan mencegah penyakit jantung.</p>
+                            <div class="d-flex justify-content-end mt-3">
+                                <a href="berita-detail.html" class="article-link" aria-label="Baca selengkapnya">
+                                    <i class="fas fa-arrow-right me-2"></i>
+                                    <span class="d-none d-md-inline">Baca Selengkapnya</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col py-5">
+                    <!-- Pagination -->
+                    <nav aria-label="Doctor pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link paging-btn" href="#" tabindex="-1"
+                                    aria-disabled="true">Sebelumnya</a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link paging-btn paging-btn-active" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link paging-btn" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link paging-btn" href="#">Selanjutnya</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <!-- <script src="assets/javascript/beranda.js"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Button group in btn-group-custom
+            const btnGroupButtonsSpesialis = document.querySelectorAll('#spesialis .btn');
+            btnGroupButtonsSpesialis.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsSpesialis.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            const btnGroupButtonsHari = document.querySelectorAll('#hari .btn');
+            btnGroupButtonsHari.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsHari.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        })
+    </script>
+</body>
+
+</html>

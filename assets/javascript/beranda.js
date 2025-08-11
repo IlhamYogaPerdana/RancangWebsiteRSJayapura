@@ -1,3 +1,8 @@
+function setLanguage(lang) {
+            document.getElementById('current-lang').innerText = lang;
+            // Di sini bisa ditambahkan logika ganti bahasa (redirect / fetch data)
+            console.log("Bahasa dipilih:", lang);
+        }
 // Enhanced Interactive Features
         document.addEventListener('DOMContentLoaded', function () {
             // Loading Animation

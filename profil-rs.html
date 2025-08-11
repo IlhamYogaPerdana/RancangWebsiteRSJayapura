@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Jayapura - Rumah Sakit Umum Pusat Jayapura</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"
+        media="not all" onload="this.media='all'">
+    <!-- Google Fonts -->
+    <link href="assets/css/font.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS Beranda-->
+    <link href="assets/css/styleprofilrs.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header py-1 py-md-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance text-white"></i>
+                    </div>
+                    <span class="fw-bold">IGD 91158</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 gap-md-3 top-header-right">
+                    <div class="d-flex align-items-center gap-1 gap-md-2">
+                        <i class="fas fa-headset"></i>
+                        <span class="d-none d-sm-inline">Hubungi Kami</span>
+                    </div>
+                    <!-- Dropdown Bahasa -->
+                    <div class="dropdown" id="languageOptions">
+                        <button
+                            class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center gap-1 gap-md-2"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ID</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('ID')">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('EN')">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <nav class="navbar navbar-expand-lg navbar-light main-header sticky-top">
+        <div class="container-fluid px-2 px-md-4">
+            <a class="navbar-brand ps-1 ps-md-3" href="#" aria-label="RS Jayapura Homepage">
+                <img src="assets/images/img_header_logo.png" alt=" Jayapura Logo" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
+
+                    <!-- Dropdown untuk Layanan -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="#rawat-jalan">Rawat Jalan</a></li>
+                            <li><a class="dropdown-item" href="#rawat-inap">Rawat Inap</a></li>
+                            <li><a class="dropdown-item" href="#igd">Instalasi Gawat Darurat</a></li>
+                            <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">Profil RS Jayapura</h1>
+                <p class="hero-subtitle">
+                    Rumah Sakit Umum Pusat Jayapura - Care For Life, Care With Love
+                </p>
+                <div class="mt-4">
+                    <span class="badge bg-light text-dark px-4 py-2 me-2 mb-2" style="font-size: 1rem;">
+                        <i class="fas fa-award me-2"></i>Terakreditasi Paripurna
+                    </span>
+                    <span class="badge bg-light text-dark px-4 py-2" style="font-size: 1rem;">
+                        <i class="fas fa-hospital me-2"></i>RS Tipe B
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-card">
+                        <div class="stats-number">100%</div>
+                        <div class="stats-title">Komitmen Pelayanan Publik</div>
+                        <div class="stats-desc">Hadir untuk meningkatkan akses layanan kesehatan berkualitas bagi
+                            masyarakat Papua</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-card">
+                        <div class="stats-number">200+</div>
+                        <div class="stats-title">Tenaga Medis dan Staf Terlatih</div>
+                        <div class="stats-desc">Didukung dokter spesialis, Dokter Umum dan tim yang berpengalaman di
+                            bidangnya</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-card">
+                        <div class="stats-number">650</div>
+                        <div class="stats-title">Tempat Tidur</div>
+                        <div class="stats-desc">Memberikan kapasitas layanan tempat tidur terbaik dan terbesar di
+                            kawasan Indonesia Timur</div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <div class="stats-card">
+                        <div class="stats-number">75K+</div>
+                        <div class="stats-title">Pasien/Tahun</div>
+                        <div class="stats-desc">Kepercayaan masyarakat Papua</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Tentang RS Jayapura</h2>
+            <p class="section-subtitle">
+                Rumah Sakit Umum Pusat Jayapura adalah rumah sakit rujukan tertinggi di Papua yang memberikan pelayanan
+                kesehatan komprehensif dengan standar nasional dan internasional.
+            </p>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h4>RS Rujukan Tertinggi</h4>
+                        <p class="text-muted">Sebagai rumah sakit tipe A, kami menjadi rujukan utama untuk seluruh
+                            wilayah Papua dan Papua Barat dengan pelayanan medis terlengkap.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Tim Medis Berpengalaman</h4>
+                        <p class="text-muted">Didukung oleh lebih dari 200 dokter spesialis dan subspesialis yang
+                            berpengalaman dalam menangani berbagai kasus medis kompleks.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Teknologi Modern</h4>
+                        <p class="text-muted">Dilengkapi dengan peralatan medis canggih dan teknologi terdepan untuk
+                            memberikan diagnosis dan pengobatan yang akurat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Mission Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="vm-card">
+                        <div class="vm-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="vm-title">Visi</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.6;">
+                            Menjadi rumah sakit rujukan terdepan di wilayah timur Indonesia yang memberikan pelayanan
+                            kesehatan berkualitas tinggi, inovatif, dan berkeadilan untuk semua.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="vm-card">
+                        <div class="vm-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="vm-title">Misi</h3>
+                        <ul
+                            style="font-size: 1rem; line-height: 1.8; text-align: left; list-style: none; padding-left: 0;">
+                            <li><i class="fas fa-check-circle me-2"></i>Memberikan pelayanan kesehatan yang berkualitas
+                            </li>
+                            <li><i class="fas fa-check-circle me-2"></i>Mengembangkan SDM kesehatan yang kompeten</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Meningkatkan teknologi dan fasilitas medis</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Melakukan penelitian dan pengembangan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline History -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-center">Sejarah & Perkembangan</h2>
+                    <div class="timeline mt-5">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1978</div>
+                            <h5>Pendirian RS Jayapura</h5>
+                            <p class="text-muted">Diresmikan sebagai rumah sakit umum untuk melayani masyarakat Papua
+                                dengan kapasitas awal 200 tempat tidur.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1995</div>
+                            <h5>Upgrade ke RS Tipe B</h5>
+                            <p class="text-muted">Peningkatan status menjadi rumah sakit tipe B dengan penambahan
+                                layanan spesialistik dan fasilitas penunjang.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2008</div>
+                            <h5>Menjadi RSUP</h5>
+                            <p class="text-muted">Penetapan status sebagai Rumah Sakit Umum Pusat dengan fungsi rujukan
+                                tertinggi di Papua.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2018</div>
+                            <h5>Akreditasi Paripurna</h5>
+                            <p class="text-muted">Meraih akreditasi paripurna dari KARS sebagai pengakuan atas kualitas
+                                pelayanan terbaik.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <h5>Digital Transformation</h5>
+                            <p class="text-muted">Implementasi sistem digital terintegrasi dan telemedicine untuk
+                                pelayanan yang lebih modern.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title text-center">Pimpinan Rumah Sakit</h2>
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-6">
+                            <div class="leadership-card position-relative">
+                                <div class="leader-header"></div>
+                                <img src="assets/images/dirut.png" alt="Direktur"
+                                    class="leader-photo position-absolute">
+                                <div class="p-3 pt-5">
+                                    <h5 class="leader-name mt-5">Dr. Petronella Marcia Risamassu</h5>
+                                    <p class="leader-position">Direktur Utama</p>
+                                    <p class="small text-muted">Sp.PD, M.Kes, FINASIM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="leadership-card position-relative">
+                                <div class="leader-header"></div>
+                                <img src="assets/images/pklo.png" alt="Direktur" class="leader-photo position-absolute">
+                                <div class="p-3 pt-5">
+                                    <h5 class="leader-name mt-5">Dr. Anton Ibo</h5>
+                                    <p class="leader-position">Direktur Perencanaan, Keuangan dan Layanan Operasional
+                                    </p>
+                                    <p class="small text-muted">Sp.A, M.Ked, IDAI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="leadership-card position-relative">
+                                <div class="leader-header"></div>
+                                <img src="assets/images/sdm.png" alt="Direktur" class="leader-photo position-absolute">
+                                <div class="p-3 pt-5">
+                                    <h5 class="leader-name mt-5">Nyoman</h5>
+                                    <p class="leader-position">Direktur SDM, Pendidikan dan Penelitian</p>
+                                    <p class="small text-muted">Sp.JP, FIHA, Ph.D</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="leadership-card position-relative">
+                                <div class="leader-header"></div>
+                                <img src="assets/images/medik.png" alt="Direktur"
+                                    class="leader-photo position-absolute">
+                                <div class="p-3 pt-5">
+                                    <h5 class="leader-name mt-5">dr. Vifi</h5>
+                                    <p class="leader-position">Derektur Medik, Keperawatan dan Penunjang</p>
+                                    <p class="small text-muted">S.Kep, M.Kep, Sp.KMB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Nilai-Nilai Kami</h2>
+            <p class="section-subtitle">
+                Nilai-nilai yang menjadi pedoman dalam memberikan pelayanan kesehatan terbaik bagi masyarakat Papua
+            </p>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h6>Caring</h6>
+                        <p class="small text-muted">Peduli dan empati dalam setiap layanan</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h6>Integrity</h6>
+                        <p class="small text-muted">Jujur dan dapat dipercaya</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h6>Excellence</h6>
+                        <p class="small text-muted">Jujur dan dapat dipercaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="kontak" class="footer pt-4 pt-md-5 loading">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/images/img_footer_logo.png" alt="RS Jayapura Logo" class="footer-logo img-fluid">
+                    <p class="mb-3 text-responsive">Jl. Baru, Kel. Argapura, Distrik Heram<br>Kota Jayapura, Papua -
+                        Indonesia</p>
+                    <div class="text-responsive">
+                        <p class="mb-1"><strong>Telp:</strong> +62 08125167</p>
+                        <p class="mb-0"><strong>Email:</strong> rspapua@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#beranda"><i class="fas fa-arrow-right me-2"></i>Beranda</a></li>
+                        <li class="mb-2"><a href="#layanan"><i class="fas fa-arrow-right me-2"></i>Layanan</a></li>
+                        <li class="mb-2"><a href="#artikel"><i class="fas fa-arrow-right me-2"></i>Artikel</a></li>
+                        <li class="mb-2"><a href="#berita"><i class="fas fa-arrow-right me-2"></i>Berita</a></li>
+                        <li class="mb-2"><a href="#profil"><i class="fas fa-arrow-right me-2"></i>Profil</a></li>
+                        <li class="mb-2"><a href="#karir"><i class="fas fa-arrow-right me-2"></i>Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h5>Subscribe</h5>
+                    <p class="mb-3 text-responsive">Dapatkan informasi terkini dari kami!</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="Masukan Email anda"
+                            aria-label="Email address">
+                        <button class="btn newsletter-btn px-3 px-md-4" type="button">
+                            <span class="d-none d-sm-inline">Subscribe</span>
+                            <i class="fas fa-paper-plane d-sm-none"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <div class="footer-bottom d-flex align-items-center justify-content-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle d-none"
+        style="z-index: 1000; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Beranda JS-->
+    <script src="assets/javascript/beranda.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Button group in btn-group-custom
+            const btnGroupButtonsSpesialis = document.querySelectorAll('#spesialis .btn');
+            btnGroupButtonsSpesialis.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsSpesialis.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            const btnGroupButtonsHari = document.querySelectorAll('#hari .btn');
+            btnGroupButtonsHari.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    btnGroupButtonsHari.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        })
+    </script>
+</body>
+
+</html>
