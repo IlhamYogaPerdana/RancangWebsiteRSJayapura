@@ -38,10 +38,18 @@
                         <i class="fas fa-headset"></i>
                         <span class="d-none d-sm-inline">Hubungi Kami</span>
                     </div>
-                    <div class="d-flex align-items-center gap-1 gap-md-2">
-                        <i class="fas fa-globe"></i>
-                        <span>ID</span>
-                        <i class="fas fa-chevron-down"></i>
+                    <!-- Dropdown Bahasa -->
+                    <div class="dropdown" id="languageOptions">
+                        <button
+                            class="btn btn-sm btn-outline-light dropdown-toggle d-flex align-items-center gap-1 gap-md-2"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <span id="current-lang">ID</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('ID')">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('EN')">English</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -93,6 +101,8 @@
                     <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
                     <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
                     <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
+
                 </ul>
             </div>
         </div>
@@ -206,7 +216,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Kamar Rawat Inap VIP</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -230,7 +240,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Intensive Care Unit (ICU)</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -254,7 +264,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Tim Dokter Spesialis</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -278,7 +288,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Tim Perawat Profesional</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -303,7 +313,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Seminar Kesehatan Masyarakat</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -326,7 +336,7 @@
                     </div>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Profil Rumah Sakit</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -349,7 +359,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Sertifikat Akreditasi</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -372,7 +382,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Laboratorium Modern</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -394,7 +404,7 @@
                     </div>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Virtual Tour 360°</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -418,7 +428,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Program Bakti Sosial</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -441,7 +451,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Departemen Radiologi</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>
@@ -464,7 +474,7 @@
                     </a>
                     <div class="gallery-info">
                         <h4 class="gallery-title">Konsultasi Medis</h4>
-                         <div class="d-flex align-items-center mb-1 galeri-meta">
+                        <div class="d-flex align-items-center mb-1 galeri-meta">
                             <i class="fas fa-calendar-alt text-muted me-2"></i>
                             <span class="me-3">25 Juli 2025</span>
                             <i class="fas fa-eye text-muted me-2"></i>

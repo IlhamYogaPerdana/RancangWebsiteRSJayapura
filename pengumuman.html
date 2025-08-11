@@ -19,90 +19,10 @@
 
     <!-- CSS Beranda-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-    <link href="assets/css/stylegaleri.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="assets/css/stylepengumuman.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <style>
-        /* Hero Section */
-        .gallery-hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            min-height: clamp(300px, 70vh, 400px);
-            color: white;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
 
-        .gallery-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><polygon points="0,0 1000,0 1000,100"/></svg>');
-            background-size: cover;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-title {
-            font-family: 'Varela Round', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero-subtitle {
-            font-family: 'Nunito', sans-serif;
-            font-size: 1.3rem;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .swiper {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            height: 100vh !important;
-            /* Full height layar */
-        }
-
-        .swiper-slide {
-            background-position: center;
-            background-size: cover;
-            width: 300px;
-            /* height: 400px; */
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .swiper-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .caption {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 1rem;
-            text-align: center;
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 
 <body>
@@ -191,31 +111,163 @@
         </div>
     </nav>
 
+
     <!-- Hero Section -->
-    <section class="gallery-hero">
+    <section class="announcements-hero">
         <div class="container">
             <div class="hero-content text-center">
-                <h1 class="hero-title mt-5">Pemeriksaan Kebugaran CPNS RSUP Jayapura Bareng Sipgar</h1>
-                <p class="hero-subtitle">RSUP Jayapura melakukan pemeriksaan kebugaran pegawai menggunakan aplikasi
-                    SIPGAR (Sistem Informasi Pengukuran Kebugaran).</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="assets/images/berita.jpg" />
-                        <div class="caption">Danau Biru - Papua</div>
+                <h1 class="hero-title">Pengumuman RSUP Jayapura</h1>
+                <p class="hero-subtitle">Tetap terhubung dengan informasi terkini seputar layanan, acara, dan
+                    perkembangan rumah sakit</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Pengumuman Aktif</span>
                     </div>
-                    <div class="swiper-slide"><img src="assets/images/galeri.jpg" /></div>
-                    <div class="swiper-slide"><img src="assets/images/depan-rs.jpg" /></div>
-                    <div class="swiper-slide"><img src="assets/images/dokter-kami.jpg" /></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Daily</span>
+                        <span class="stat-label">Update Terbaru</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Kategori</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-card">
+                <h3 class="filter-title">
+                    <i class="fas fa-filter me-2"></i>Filter & Pencarian
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="filter-buttons" id="categoryFilters">
+                            <button class="filter-btn active" data-category="all">
+                                <i class="fas fa-th me-1"></i>Semua
+                            </button>
+                            <button class="filter-btn" data-category="urgent">
+                                <i class="fas fa-exclamation-triangle me-1"></i>Penting
+                            </button>
+                            <button class="filter-btn" data-category="info">
+                                <i class="fas fa-info-circle me-1"></i>Informasi
+                            </button>
+                            <button class="filter-btn" data-category="event">
+                                <i class="fas fa-calendar me-1"></i>Acara
+                            </button>
+                            <button class="filter-btn" data-category="health">
+                                <i class="fas fa-heartbeat me-1"></i>Kesehatan
+                            </button>
+                            <button class="filter-btn" data-category="service">
+                                <i class="fas fa-cogs me-1"></i>Layanan
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="search-box">
+                            <input type="text" class="search-input" id="searchInput" placeholder="Cari pengumuman...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Announcements -->
+    <!-- <section class="featured-announcements">
+        <div class="container">
+            <h2 class="featured-title mt-5">Pengumuman Unggulan</h2>
+
+            <div class="featured-carousel">
+                <div class="featured-slide" data-aos="fade-up">
+                    <div class="featured-content">
+                        <div class="featured-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="featured-announcement-title">Layanan Baru: Telemedicine 24/7</h3>
+                        <p class="featured-announcement-text">
+                            RSUP Jayapura kini menyediakan layanan konsultasi online 24 jam untuk kemudahan akses
+                            pelayanan kesehatan bagi masyarakat Papua.
+                        </p>
+                        <button class="read-more-btn" onclick="openAnnouncementModal('telemedicine')">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Announcements Grid -->
+    <section class="announcements-section">
+        <div class="container">
+            <div id="announcementsGrid" class="announcements-grid">
+                <!-- Loading skeleton will be replaced with actual content -->
+                <div class="skeleton-card">
+                    <div class="skeleton-line short loading-skeleton"></div>
+                    <div class="skeleton-line medium loading-skeleton"></div>
+                    <div class="skeleton-line long loading-skeleton"></div>
+                    <div class="skeleton-line medium loading-skeleton"></div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-line short loading-skeleton"></div>
+                    <div class="skeleton-line medium loading-skeleton"></div>
+                    <div class="skeleton-line long loading-skeleton"></div>
+                    <div class="skeleton-line medium loading-skeleton"></div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-line short loading-skeleton"></div>
+                    <div class="skeleton-line medium loading-skeleton"></div>
+                    <div class="skeleton-line long loading-skeleton"></div>
+                    <div class="skeleton-line medium loading-skeleton"></div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-container">
+                <nav aria-label="Pagination">
+                    <ul class="pagination justify-content-center" id="paginationNav">
+                        <!-- Pagination will be generated dynamically -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcement Detail Modal -->
+    <div class="modal fade" id="announcementModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Detail Pengumuman</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalContent">
+                        <!-- Content will be loaded dynamically -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" onclick="shareAnnouncement()">
+                        <i class="fas fa-share-alt me-1"></i>Bagikan
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="printAnnouncement()">
+                        <i class="fas fa-print me-1"></i>Print
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer id="kontak" class="footer pt-4 pt-md-5 loading">
@@ -270,35 +322,14 @@
     </button>
 
 
-    <!-- Bootstrap JS -->
-    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Beranda JS-->
     <script src="assets/javascript/beranda.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 1, // Full width
-            // slidesPerView: "auto",
-            loop: true,
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 200,
-                modifier: 2.5,
-                slideShadows: false,
-            },
-            autoplay: {
-                delay: 3000, // 3000ms = 3 detik
-                disableOnInteraction: false, // tetap lanjut meskipun user geser manual
-            },
-        });
-    </script>
+    <script src="assets/javascript/pengumuman.js"></script>
+
 </body>
 
 </html>
