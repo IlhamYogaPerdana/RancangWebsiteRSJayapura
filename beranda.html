@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- CSS Beranda-->
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/styleberanda.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -61,7 +63,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="beranda.html">Beranda</a></li>
 
                     <!-- Dropdown untuk Layanan -->
                     <li class="nav-item dropdown">
@@ -76,12 +78,23 @@
                             <li><a class="dropdown-item" href="#penunjang">Penunjang Medis</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Artikel
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                            <li><a class="dropdown-item" href="berita.html">Berita</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Kata Dokter</a></li>
+                            <li><a class="dropdown-item" href="berita.html">Sehat Pedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil-rs.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pengumuman.html">Pengumuman</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="#artikel">Artikel</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#karir">Karir</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
                 </ul>
             </div>
         </div>
@@ -115,44 +128,56 @@
             <div class="container">
                 <div class="row g-3 g-md-4 justify-content-center">
                     <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                        <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                            tabindex="0" role="button">
-                            <i
-                                class="fas fa-search service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                            <span class="fw-medium">Cari Dokter</span>
-                        </div>
+                        <a href="dokter-kami.html" class="text-decoration-none text-reset">
+                            <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
+                                tabindex="0" role="button">
+                                <i
+                                    class="fas fa-search service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
+                                <span class="fw-medium text-responsive">Cari Dokter</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-2">
                         <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
                             tabindex="0" role="button">
                             <i
                                 class="fas fa-clipboard-list service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                            <span class="fw-medium">Pendaftaran</span>
+                            <span class="fw-medium text-responsive">Pendaftaran</span>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                        <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                            tabindex="0" role="button">
-                            <i
-                                class="fas fa-bullhorn service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                            <span class="fw-medium">Pengaduan</span>
-                        </div>
+                        <a href="pengaduan.html" class="text-decoration-none text-reset">
+
+                            <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
+                                tabindex="0" role="button">
+                                <i
+                                    class="fas fa-bullhorn service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
+                                <span class="fw-medium text-responsive">Pengaduan</span>
+                            </div>
+                        </a>
+
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                        <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                            tabindex="0" role="button">
-                            <i
-                                class="fas fa-chart-bar service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                            <span class="fw-medium">Kepuasan</span>
-                        </div>
+                        <a href="kepuasan.html" class="text-decoration-none text-reset">
+
+                            <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
+                                tabindex="0" role="button">
+                                <i
+                                    class="fas fa-chart-bar service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
+                                <span class="fw-medium text-responsive">Kepuasan</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                        <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
-                            tabindex="0" role="button">
-                            <i
-                                class="fas fa-rupiah-sign service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
-                            <span class="fw-medium">Info Tarif</span>
-                        </div>
+                        <a href="tarif.html" class="text-decoration-none text-reset">
+                            <div class="service-card p-2 p-md-3 p-lg-4 h-100 d-flex flex-column flex-lg-row align-items-center text-center text-lg-start"
+                                tabindex="0" role="button">
+                                <i
+                                    class="fas fa-rupiah-sign service-icon fs-4 fs-md-3 fs-lg-2 mb-2 mb-lg-0 me-lg-3 align-self-center"></i>
+                                <!-- <div class="tarif-badge mb-2 mb-lg-0">Rp</div> -->
+                                <span class="fw-medium text-responsive">Info Tarif</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -277,8 +302,6 @@
                             <div class="col-12 col-md-6 text-center slider-image-container">
                                 <img src="assets/images/radiologi.jpg" alt="Layanan Jantung Terpadu"
                                     class="slider-image-semantic">
-                                <img src="assets/images/radiologi.jpg" alt="Layanan Jantung Terpadu"
-                                    class="slider-image-semantic">
                             </div>
                             <div class="col-12 col-md-6 slider-text">
                                 <h3>JANTUNG TERPADU</h3>
@@ -293,8 +316,6 @@
                     <div class="swiper-slide">
                         <div class="row align-items-start g-4">
                             <div class="col-12 col-md-6 text-center slider-image-container">
-                                <img src="assets/images/paru.jpg" alt="Layanan Paru Unggulan"
-                                    class="slider-image-semantic">
                                 <img src="assets/images/paru.jpg" alt="Layanan Paru Unggulan"
                                     class="slider-image-semantic">
                             </div>
@@ -508,7 +529,7 @@
     <!-- Beranda JS-->
     <script src="assets/javascript/beranda.js"></script>
     <script>
-         const layananSwiper = new Swiper(".layananSwiper", {
+        const layananSwiper = new Swiper(".layananSwiper", {
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
