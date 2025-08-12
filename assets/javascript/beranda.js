@@ -260,3 +260,61 @@ window.addEventListener('load', function () {
     const loadTime = performance.now();
     console.log(`Page loaded in ${Math.round(loadTime)}ms`);
 });
+
+// Category Filter Functionality
+document.addEventListener('DOMContentLoaded', function () {
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const mitraCards = document.querySelectorAll('.mitra-card');
+
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Remove active class from all tabs
+            categoryTabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            this.classList.add('active');
+
+            const selectedCategory = this.getAttribute('data-category');
+
+            // Filter cards
+            mitraCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+
+                if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+                    card.style.display = 'block';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+
+                    // Animate in
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.3s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(-20px)';
+
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+
+    // Smooth scroll animation for cards on load
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    });
+
+    mitraCards.forEach(card => {
+        observer.observe(card);
+    });
+});
